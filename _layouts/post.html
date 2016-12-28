@@ -3,13 +3,12 @@ layout: default
 ---
 
 <div class="post">
-  <h2 class="post-title">{{ page.title }}</h2>
   <span class="post-date">{{ page.date | date_to_string }}</span>
-  <!-- <ul class="list-inline">
+  <ul class="list-inline">
   {% for tag in page.tags %}
     <li><a href="/archive/tags/#{{ tag | slugify }}" class="label label-default"><i class="fa fa-tag" aria-hidden="true"></i> {{ tag }}</a></li>
   {% endfor %}
-  </ul> -->
+  </ul>
 
   {{ content }}
 </div>

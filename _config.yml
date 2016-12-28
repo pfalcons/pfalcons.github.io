@@ -14,28 +14,65 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Perineum Falcons
-email: whitsitt@gmail.com
-description: >
-  Team Perineum Falcons, a RAGBRAI cycling team led by team captain Mike James.
+tagline: A RAGBRAI cycling team.
+description: Team Perineum Falcons, a RAGBRAI cycling team led by team captain Mike James.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://pfalcons.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://127.0.0.1:4000" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: pfalcons
 
-collections:
-  members: members
-    output: true
-  ragbrai: ragbrai
-    output: true
+# About/contact
+author:
+  name:              Joe Whitsitt
+  url:               https://twitter.com/joewhitsitt
+  email:             joe@whitsitt.org
+  twitter:           joewhitsitt
+
+# Custom vars
+version:             1.0.0
 
 # Build settings
 sass:
   sass_dir: _sass
+  style: compressed
 include: ['_pages']
-kramdown:
-  input: GFM
+markdown: kramdown
 theme: minima
 gems:
-  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink: /blog/:year/:month/:day/:title
+# Pagination.
+paginate: 5
+paginate_path: "blog/page:num"
+
 exclude:
   - Gemfile
   - Gemfile.lock
+
+collections:
+  members:
+    output: true
+    permalink: /members/:path/
+  ragbrai:
+    output: true
+    permalink: /ragbrai/:path/
+
+defaults:
+  - scope:
+      type: pages
+    values:
+      layout: page
+  - scope:
+      type: posts
+    values:
+      layout: post
+  - scope:
+      type: members
+    values:
+      layout: member
+      image: profile_image_placeholder.png
+  - scope:
+      type: ragbrai
+    values:
+      layout: ragbrai

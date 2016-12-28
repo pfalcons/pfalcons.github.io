@@ -1,3 +1,18 @@
-<footer>
-
+<footer role="contentinfo">
+  <div class="container">
+    <div class="row">
+      Powered by Jekyll
+    </div>
+  </div>
 </footer>
+
+<script src="/scripts/jquery.countdown.min.js"></script>
+<script type="text/javascript">
+  $("#ragbrai-countdown").countdown('2017/07/23').on('update.countdown', function(event) {
+  var $this = $(this).html(event.strftime(''
+    + '<div class="count-day"><span class="time">%-D</span><span class="label small">days</span></div>'
+    + '<div class="count-hr"><span class="time">%H</span><span class="label small">hours</span></div>'
+    + '<div class="count-min"><span class="time">%M</span><span class="label small">minutes</span></div>'
+    + '<div class="count-sec"><span class="time">%S</span><span class="label small">seconds</span></div>'));
+});
+</script>

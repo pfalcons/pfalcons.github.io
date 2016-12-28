@@ -1,15 +1,40 @@
 <!DOCTYPE html>
 <html lang="en-us">
   {% include head.html %}
+  {% include analytics.html %}
 
 <body>
-	{% include header.html %}
-	<main>
-		<article>
-			{{ content }}
-		</article>
-		{% include footer.html %}
-	</main>
+  {% include header.html %}
+  <div class="container">
+    <div class="row">
+      <main class="col-md-8" role="main">
+        <section>
+          <h1>{{ page.title }} {% if page.nickname %}<small><em>{{ page.nickname }}</em></small>{% endif %}</h1>
+          {{ content }}
+          {% if page.comments %}
+          <div class="comments">
+            {% include comments.html %}
+          </div>
+          {% endif %}
+        </section>
+      </main>
+      <aside class="col-md-3" role="complementary">
+        <section>
+          <h2>Countdown to RAGBRAI</h2>
+          <div class="text-danger" id="ragbrai-countdown"></div>
+        </section>
+        <section>
+          <h2>Sponsored by</h2>
+          <p><a href="http://cibbrewery.com"><img style="width: 100%;" src="/assets/images/cib_logo.png" alt="CIB Brewery, Carson, IA"></a></p>
+          <p class="text-center small">Thanks to Alex and the rest of <a href="http://cibbrewery.com">CIB Brewery</a><a></a> for sponsoring the Perineum Falcons on RAGBRAI XLIV!</p>
+        </section>
+        <section>
+          <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/pfalcons" data-widget-id="427434079458316288">Tweets by @pfalcons</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </section>
+      </aside>
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+  {% include footer.html %}
 </body>
-
 </html>

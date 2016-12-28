@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<article class="member">
+  {% if page.image %}<p><img class="img-thumbnail page-image" src="/assets/images/members/{{ page.image }}" alt="{{ page.title }}" /></p>{% endif %}
+  {% if page.role %}<p class="lead member-role"><strong>{{ page.role }}</strong></p>{% endif %}
+  {% if content %}
+  <div class="content-body">
+    {{ content }}
+  </div>
+  {% endif %}
+  {% if page.first_ragbrai %}<p class="first-ragbrai text-muted small"><em>Member since {{ page.first_ragbrai }}</em></p>{% endif %}
+</article>
+{% assign quotes = site.data.quotes | where:"member", page.short_name | sort:"year" %}
+{% if quotes != empty %}
+<hr />
+<section class="member-quotes">
+  <h2>Quotes from {{ page.title }}</h2>
+  <ul class="quotes">
+    {% for quote in quotes %}
+    <li class="quote">{{ quote.quote }}{% if quote.year %} - {{ quote.year }}{% endif %}</li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}

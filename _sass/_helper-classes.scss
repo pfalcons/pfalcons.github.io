@@ -1,0 +1,31 @@
+.angled-top-left{
+    @include angle-edge($pos-top: topleft, $angle-top: 3deg);
+}
+
+.angled-top-right{
+    @include angle-edge($pos-top: topright, $angle-top: 3deg);
+}
+
+.angled-bottom-left{
+    @include angle-edge($pos-btm: bottomleft, $angle-btm: 3deg);
+}
+
+.angled-bottom-right{
+    @include angle-edge($pos-btm: bottomright, $angle-btm: 3deg);
+}
+
+.angled-both-left{
+    @include angle-edge(topleft, 3deg, bottomleft, 3deg);
+}
+.angled-both-right{
+    @include angle-edge(topright, 3deg, bottomright, 3deg);
+}
+.angled-both-left-right{
+    @include angle-edge(topleft, 3deg, bottomright, 3deg);
+}
+.angled-both-right-left{
+    @include angle-edge(topright, 3deg, bottomleft, 3deg);
+}
+.warm-gradient {
+  background: linear-gradient(to right, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+}

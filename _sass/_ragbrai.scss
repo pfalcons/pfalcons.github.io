@@ -1,0 +1,22 @@
+.ragbrai-cards {
+  display: inline-block;
+  vertical-align: middle;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+
+  .ragbrai-card {
+    margin: 0.5em;
+    width: 230px;
+    text-align: center;
+    img {
+      max-height: 230px;
+      width: auto;
+    }
+  }
+}
