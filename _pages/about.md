@@ -37,7 +37,7 @@ We got a lot of years out of that ol’bus.  More than any sane person could exp
  
 As of 2013, we have a NEW BUS now, co-owned by Justin, a.k.a. “Juice”, and Erica Schneider.  This one is actually younger than most of our team members, and just like the old bus, "she may not look like much, but she's got it where it counts, kid."  During RAGBRAI XLI, she proved true and we are looking forward to many more years on board.
  
-perineum falcon II
+![perineum falcon II](https://dl.dropboxusercontent.com/sh/du5x5prmmlfz92c/AABRVtwSIOHIAMGDBbVMI8S7a/bus.jpg)
  
 Regardless of how we get there or what we call ourselves, I have seen many great friends come aboard for the ride, which is the best part of all.
  
