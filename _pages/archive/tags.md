@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Tags
-weight: 3
 icon: fa-tags
 permalink: /archive/tags/
 ---

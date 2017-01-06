@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Archive
-weight: 1
 icon: fa-archive
 permalink: /archive/
 ---

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Contact
-weight: 5
+weight: 4
 icon: fa-envelope
 permalink: /contact/
 ---

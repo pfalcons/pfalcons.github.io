@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Categories
-weight: 2
 icon: fa-folder
 permalink: /archive/categories/
 ---

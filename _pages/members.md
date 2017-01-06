@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Members
-weight: 0
+weight: 2
 icon: fa-group
 permalink: /members/
 ---
