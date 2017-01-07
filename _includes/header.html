@@ -12,7 +12,7 @@
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li role="presentation" {% if page.url == blog %}class="active"{% endif %}><a href="blog">Blog</a></li>
+          <li role="presentation" {% if page.url == '/blog/index.html' %}class="active"{% endif %}><a href="/blog/">Blog</a></li>
           {% assign pages_list = site.pages | sort:"weight"  %}
           {% for node in pages_list %}
             {% if node.title != null %}
@@ -21,6 +21,15 @@
               {% endif %}
             {% endif %}
           {% endfor %}
+          <!-- <li class="dropdown{% if page.url == '/archive/' %} active{% endif %}">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Archive</a>
+            <ul class="dropdown-menu">
+              <li><a href="/archive/">Archive</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="/archive/categories/">Categories</a></li>
+              <li><a href="/archive/tags/">Tags</a></li>
+            </ul>
+          </li> -->
         </ul>
       </div>
       <!--/.nav-collapse -->

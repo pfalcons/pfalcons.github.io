@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Archive
+title: Blog Archive
 icon: fa-archive
 permalink: /archive/
 ---
