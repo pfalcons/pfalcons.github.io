@@ -1,7 +1,7 @@
 ---
 title: Justin
 short_name: justin
-first_ragbrai: 2011
+ragbrai: 2011
 active: true
 co-owner: true
 image: justin.jpg

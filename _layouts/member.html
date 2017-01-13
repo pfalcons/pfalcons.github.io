@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% assign subtitle = page.nickname %}
 <article class="member">
   {% if page.image %}<p><img class="img-thumbnail page-image" src="/assets/images/members/{{ page.image }}" alt="{{ page.title }}" /></p>{% endif %}
   {% if page.role %}<p class="lead member-role"><strong>{{ page.role }}</strong></p>{% endif %}
@@ -9,7 +10,7 @@ layout: default
     {{ content }}
   </div>
   {% endif %}
-  {% if page.first_ragbrai %}<p class="first-ragbrai text-muted small"><em>Member since {{ page.first_ragbrai }}</em></p>{% endif %}
+  {% if page.ragbrai %}<p class="member-ragbrai text-muted small"><em>Member since {{ page.ragbrai }}</em></p>{% endif %}
 </article>
 {% assign quotes = site.data.quotes | where:"member", page.short_name | sort:"year" %}
 {% if quotes != empty %}

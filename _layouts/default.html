@@ -9,7 +9,12 @@
     <div class="row">
       <main class="col-md-8" role="main">
         <section>
-          <h1>{{ page.title }} {% if page.nickname %}<small><em>{{ page.nickname }}</em></small>{% endif %}</h1>
+          {% if page.nickname %}
+            {% assign subtitle = page.nickname %}
+          {% elsif page.subtitle %}
+            {% assign subtitle = page.subtitle %}
+          {% endif %}
+          <h1>{{ page.title }} {% if subtitle %}<small><em>{{ subtitle }}</em></small>{% endif %}</h1>
           {{ content }}
           {% if page.comments %}
           <div class="comments">
@@ -19,6 +24,12 @@
         </section>
       </main>
       <aside class="col-md-3" role="complementary">
+        {% if page.collection %}
+        <section class="back-button">
+          <h2 class="sr-only">View all {{ page.collection }}</h2>
+          <a href="/{{ page.collection }}" class="btn btn-danger btn-block"><span aria-hidden="true">&larr;</span> View all {{ page.collection }}</a>
+        </section>
+        {% endif %}
         <section>
           <h2>Countdown to RAGBRAI</h2>
           <div class="text-danger" id="ragbrai-countdown"></div>
@@ -29,7 +40,7 @@
           <p class="text-center small">Thanks to Alex and the rest of <a href="http://cibbrewery.com">CIB Brewery</a><a></a> for sponsoring the Perineum Falcons on RAGBRAI XLIV!</p>
         </section>
         <section>
-          <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/pfalcons" data-widget-id="427434079458316288">Tweets by @pfalcons</a>
+          <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/pfalcons" data-widget-id="427434079458316288" data-chrome="transparent">Tweets by @pfalcons</a>
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
         </section>
       </aside>

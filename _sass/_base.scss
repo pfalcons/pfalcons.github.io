@@ -4,6 +4,7 @@
 body {
   padding-top: 100px;
   font-size: 1.8rem;
+  //background: url(/assets/images/textures/dark_wall.png) repeat;
 }
 .logo {
   display: block;
@@ -28,6 +29,7 @@ section {
   margin: 2rem 0;
 }
 footer {
+  border-top: 1px solid #111;
   background-color: #222;
   padding: 4rem 0;
 }
@@ -48,4 +50,45 @@ footer {
 .date {
   font-style: italic;
   // color handled by bootstrap class
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+.img-crop-circle {
+  background-color: #1c1e22;
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  img {
+    display: inline;
+    margin: 0 auto;
+    margin-left: -50%;
+    height: 100%;
+    width: auto;
+  }
+}
+
+.container-wrapper {
+  padding: 4rem 0;
 }

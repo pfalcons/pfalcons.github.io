@@ -20,3 +20,43 @@
     }
   }
 }
+.ragbrai {
+  .ragbrai-header {
+    background-color: #222;
+    border-top: 5px solid $brand-danger;
+  }
+  .ragbrai-header-content {
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      .left {
+        flex: 300px 0 1;
+      }
+      .right {
+        flex: auto 1 1;
+      }
+    }
+  }
+  .count-top {
+    font-size: 1.3rem;
+  }
+  .count {
+    font-size: 4.0rem;
+  }
+  .stat {
+    text-align: center;
+  }
+  .ragbrai-towns {
+    text-align: center;
+  }
+
+  .ragbrai-members {
+    border-top: 5px solid $brand-primary;
+    .member {
+      padding: 1rem;
+    }
+  }
+}

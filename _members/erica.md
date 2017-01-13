@@ -1,7 +1,7 @@
 ---
 title: Erica
 short_name: erica
-first_ragbrai: 2011
+ragbrai: 2011
 active: true
 co-owner: true
 weight: -1

@@ -2,7 +2,7 @@
 title: Don
 short_name: don
 role: Team Brewmaster / Deceivingly level headed badass just before the riot.
-first_ragbrai: 2006
+ragbrai: 2006
 active: true
 image: don.jpg
 ---

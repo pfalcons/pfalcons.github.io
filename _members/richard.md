@@ -3,7 +3,7 @@ title: Richard
 short_name: richard
 nickname: Frodo
 role: Team Sticker Applicator / Jailbird
-first_ragbrai: 2009
+ragbrai: 2009
 active: true
 image: richard.jpg
 ---

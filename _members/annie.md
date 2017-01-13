@@ -2,7 +2,7 @@
 title: Annie
 short_name: annie
 role: Team Fun Finder / Best Left Tit Runner Up
-first_ragbrai: 2009
+ragbrai: 2009
 active: true
 image: annie.jpg
 ---

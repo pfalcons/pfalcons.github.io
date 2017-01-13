@@ -3,7 +3,7 @@ title: Chris
 short_name: chris-wz
 nickname: Texas
 role: Team Nudist / Butt Model
-first_ragbrai: 2009
+ragbrai: 2009
 active: true
 image: chris-wz.jpg
 ---

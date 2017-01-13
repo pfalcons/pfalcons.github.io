@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Ragbrai
+title: RAGBRAI
 weight: 3
 icon: fa-gear
 permalink: /ragbrai/

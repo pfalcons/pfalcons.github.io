@@ -2,7 +2,7 @@
 title: Jenny
 short_name: jenny
 role: Team Captain’s Wife / Breastfeeder
-first_ragbrai: 2006
+ragbrai: 2006
 active: true
 co-owner: true
 image: jenny.jpg
