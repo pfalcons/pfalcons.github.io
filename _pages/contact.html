@@ -1,0 +1,41 @@
+---
+layout: page
+title: Contact
+weight: 5
+icon: fa-envelope
+permalink: /contact/
+---
+
+<!-- Hidden message to show if contact is successful. -->
+<div id="submit-success" class="alert alert-success alert-dismissible collapse" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>Message Sent!</strong><br />
+  We may or may not be in touch.
+</div>
+
+<!-- Hidden message to show if user encounters errors. -->
+<div id="submit-errors" class="alert alert-warning alert-dismissible collapse" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>Whoa! Something went wrong.</strong><br />
+  Clearly email is not your thing. Find us on RAGBRAI instead.
+</div>
+
+<p>Send us a message, or don't.</p>
+<form id="contact-form" action="https://formspree.io/contact@whitsitt.org"
+      method="POST">
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" class="form-control" id="email" name="_replyto" required>
+  </div>
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+    <input type="text" name="_gotcha" style="display:none" />
+    <input type="hidden" name="_next" value="//pfalcons.github.io/contact" />
+    </div>
+  <button type="submit" class="btn btn-primary" value="Send">Submit</button>
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+<script src="/scripts/custom.js"></script>
