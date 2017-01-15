@@ -8,6 +8,7 @@ layout: default-full
 {% assign ragbrai_data = site.data.ragbrai[page.title] %}
 
 <div class="ragbrai">
+
   <div class="container-wrapper ragbrai-header">
     <div class="container">
       <div class="ragbrai-header-content">
@@ -40,13 +41,14 @@ layout: default-full
                 {% for town in ragbrai_data['towns'] %}
                   {{ town }}{% if forloop.last == false %} <span aria-hidden="true">&rarr;</span> {% endif %}
                 {% endfor %}
-              <small></p>
+              </small></p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+
   {% assign members = site.members | where:"ragbrai",year %}
   {% if members != empty %}
   <div class="container-wrapper ragbrai-members">
@@ -68,27 +70,85 @@ layout: default-full
   </div>
   {% endif %}
 
-  <div class="blog-post spacing">
-    {{ content }}
 
-
-
-
-    <!-- <div id="map"></div>
-    {{ ragbrai_data['map'] }} -->
+  {% if ragbrai_data['logo'] %}
+  <div class="container-wrapper ragbrai-map">
+    <div class="container">
+      <h2>RAGBRAI {{ ragbrai_data['name'] }} Route Map <small><a href="http://geobike.com">Source: GeoBike</a></small></h2>
+    </div>
+    <div class="ragbrai-map-content">
+      <div id="map"></div>
+    </div>
   </div>
-</div>
-<!-- <script type="text/javascript">
-function initMap() {
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 11,
-        });
+  {% endif %}
 
-        var routeLayer = new google.maps.KmlLayer({
-          url: '{{ ragbrai_data['map'] }}',
-          map: map
-        });
-      }
-</script>
+  {% assign posts = site.posts | where:"ragbrai",year %}
+  {% if posts != empty %}
+  <div class="container-wrapper ragbrai-posts">
+    <div class="container">
+      <h2>{{ year }} Blog Posts</h2>
+      <div class="ragbrai-posts-content">
+        {% for post in posts %}
+        <div class="post">
+          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  {% assign group_quotes = site.data.quotes | group_by: 'year' %}
+  {% for group in group_quotes %}
+  {% if group.name == page.title %}
+  <div class="container-wrapper ragbrai-quotes quotes">
+    <div class="container">
+      <h2>Quotes from RAGBRAI {{ ragbrai_data['name'] }}</h2>
+      {% assign quotes = group.items %}
+      <div class="row">
+      {% for quote in quotes reversed %}
+        <div class="col-md-4 quote">
+          <blockquote>{{ quote.quote }}
+          {% assign member = site.members | where:"short_name", quote.member | first %}
+          {% if member or quote.year %}
+          <div class="quote-details">
+            {% if member %}
+            <a href="{{ member.url }}">
+              <div class="img-crop-circle">
+                <img src="/assets/images/members/{{ member.image }}">
+              </div>
+              <div class="name">{{ member.title }}</div>
+            </a>
+            {% endif %}
+            {% if quote.year %}<span class="year small">{{ quote.year }}</span>{% endif %}
+          </div>
+          {% endif %}
+          </blockquote>
+        </div>
+      {% endfor %}
+      </div>
+    </div>
+    <div class="row row-centered">
+			<div class="col-md-6 col-centered">
+				<small><p><a href="https://goo.gl/forms/WeYaOwYCSfM2qXsD2" target="_blank" class="btn btn-danger btn-block">Submit a quote</a></p></small>
+			</div>
+		</div>
+  </div>
+  {% endif %}
+  {% endfor %}
+
+</div>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEG5GX4vYP06leaQsdTeng424HWvwydpg&callback=initMap"
-    async defer></script> -->
+    async defer></script>
+<script type="text/javascript">
+function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 11,
+    scrollwheel: false,
+  });
+  var routeLayer = new google.maps.KmlLayer({
+    url: '{{ ragbrai_data['map'] }}',
+    map: map
+  });
+}
+</script>

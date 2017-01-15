@@ -4,3 +4,18 @@
     color: $brand-success;
   }
 }
+.post {
+  .post-date {
+    font-style: italic;
+    color: $brand-success;
+  }
+  .post-image {
+    @media (min-width: 768px) {
+      float: left;
+      width: 40%;
+      max-width: 300px;
+      height: auto;
+      margin-right: 1rem;
+    }
+  }
+}

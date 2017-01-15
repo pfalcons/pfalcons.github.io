@@ -17,10 +17,14 @@ layout: default
 <hr />
 <section class="member-quotes">
   <h2>Quotes from {{ page.title }}</h2>
-  <ul class="quotes">
-    {% for quote in quotes %}
-    <li class="quote">{{ quote.quote }}{% if quote.year %} - {{ quote.year }}{% endif %}</li>
+  <div class="quotes">
+    {% for quote in quotes reversed %}
+    <div class="quote">
+      <blockquote>
+        {{ quote.quote }}
+        {% if quote.year %}<div class="year small">{{ quote.year }}</div>{% endif %}
+      </blockquote></div>
     {% endfor %}
-  </ul>
+  </div>
 </section>
 {% endif %}

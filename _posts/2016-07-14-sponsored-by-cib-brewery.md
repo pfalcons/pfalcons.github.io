@@ -3,6 +3,7 @@ title:  'Sponsored by CIB Brewery'
 category: sponsors
 comments: false
 ragbrai: 2016
+image_url: /assets/images/cib_logo.png
 ---
 The Perineum Falcons are excited to announce that [CIB Brewery](http://cibbrewery.com/), out of Carson, IA will be our sponsor for RAGBRAI XLIV. Known as a farmhouse nano-brewery, this small operation arguably produces some of the best beer in the state of Iowa.
 

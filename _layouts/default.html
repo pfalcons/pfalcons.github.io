@@ -24,6 +24,12 @@
         </section>
       </main>
       <aside class="col-md-3" role="complementary">
+        {% if page.dir contains "/blog/" %}
+        <section class="back-button">
+          <h2 class="sr-only">View all blog posts</h2>
+          <a href="/blog/" class="btn btn-danger btn-block"><span aria-hidden="true">&larr;</span> View all blog posts</a>
+        </section>
+        {% endif %}
         {% if page.collection %}
         <section class="back-button">
           <h2 class="sr-only">View all {{ page.collection }}</h2>

@@ -4,15 +4,9 @@
   {% include analytics.html %}
 
 <body>
-  {% if page.collection %}
-  <div class="container back-button">
-    <h2 class="sr-only">View all {{ page.collection }}</h2>
-    <a href="/{{ page.collection }}" class="btn btn-danger btn-xs"><span aria-hidden="true">&larr;</span> View all {{ page.collection }}</a>
-  </div>
-  {% endif %}
   {% include header.html %}
       <main role="main">
-          {{ content }}
+        {{ content }}
       </main>
   {% include footer.html %}
 </body>

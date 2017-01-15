@@ -4,13 +4,23 @@ layout: default
 
 <div class="post">
   <span class="post-date">{{ page.date | date_to_string }}</span>
+  {% if page.tags %}
   <ul class="list-inline">
   {% for tag in page.tags %}
     <li><a href="/archive/tags/#{{ tag | slugify }}" class="label label-default"><i class="fa fa-tag" aria-hidden="true"></i> {{ tag }}</a></li>
   {% endfor %}
   </ul>
-
-  {{ content }}
+  {% endif %}
+  <div class="post-content">
+  {% if page.image_url %}
+  <div class="post-image">
+    <p><img class="img-thumbnail page-image" src="{{ page.image_url }}" alt="{{ page.title }}" /></p>
+  </div>
+  {% endif %}
+  <div class="post-body">
+    {{ content }}
+  </div>
+  </div>
 </div>
 
 <!-- <div class="related">
