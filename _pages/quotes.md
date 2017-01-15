@@ -35,12 +35,12 @@ permalink: /quotes/
 				</blockquote>
 			</div>
 		{% endfor %}
-		<div class="row row-centered">
-			<div class="col-md-6 col-centered">
-				<small><p><a href="https://goo.gl/forms/WeYaOwYCSfM2qXsD2" target="_blank" class="btn btn-danger btn-block">Submit a quote</a></p></small>
-			</div>
-		</div>
 		</div>
 	{% endfor %}
+	<div class="row row-centered">
+		<div class="col-md-6 col-centered">
+			<small><p><a href="https://goo.gl/forms/WeYaOwYCSfM2qXsD2" target="_blank" class="btn btn-danger btn-block">Submit a quote</a></p></small>
+		</div>
+	</div>
 	</div>
 </div>
