@@ -137,6 +137,13 @@ layout: default-full
   {% endif %}
   {% endfor %}
 
+  {% if content %}
+    <div class="container-wrapper ragbrai-misc">
+      <div class="container">
+        {{ content }}
+      </div>
+    </div>
+  {% endif %}
 </div>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEG5GX4vYP06leaQsdTeng424HWvwydpg&callback=initMap"
     async defer></script>
