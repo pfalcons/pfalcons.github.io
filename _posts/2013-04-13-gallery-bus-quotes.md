@@ -1,5 +1,5 @@
 ---
-title: Gallery: The Bus Quotes
+title: 'Gallery: The Bus Quotes'
 category: gallery
 tags: bus, quotes
 comments: true
