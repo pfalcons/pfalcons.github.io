@@ -1,7 +1,6 @@
 ---
 title: 'Gallery: The Bus Quotes'
-category: gallery
-tags: bus, quotes
+tags: gallery quotes bus
 comments: true
 image_url: https://dl.dropboxusercontent.com/s/srws3yybn82g7ry/2013-04-13%2010-30-44.jpg
 ---
