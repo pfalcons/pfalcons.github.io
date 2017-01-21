@@ -1,6 +1,6 @@
 ---
 title:  'Sponsored by CIB Brewery'
-category: sponsors
+tags: sponsors beer cib
 comments: false
 ragbrai: 2016
 image_url: /assets/images/cib_logo.png
