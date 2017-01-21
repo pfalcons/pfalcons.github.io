@@ -2,7 +2,7 @@
 title:  '2015 RAGBRAI XLIII Route Announced!'
 tags: route
 comments: false
-ragbrai: 2014
+ragbrai: 2015
 ---
 From: [http://ragbrai.com/2015/01/24/ragbrai-xliii-overnight-towns-back-to-the-start/](http://ragbrai.com/2015/01/24/ragbrai-xliii-overnight-towns-back-to-the-start/)
 
