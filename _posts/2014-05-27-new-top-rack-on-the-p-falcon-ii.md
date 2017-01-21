@@ -1,6 +1,6 @@
 ---
 title:  'New top-rack on the P-Falcon II'
-category: bus
+tags: bus
 comments: false
 ragbrai: 2014
 image_url: /assets/images/blog/top-rack.jpeg
