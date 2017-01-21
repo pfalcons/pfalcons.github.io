@@ -1,6 +1,6 @@
 ---
 title:  'Throwback Thursday on a Monday'
-category: video
+tags: video
 comments: false
 ragbrai: 2007
 image_url: /assets/images/blog/fta-header.png
