@@ -1,6 +1,6 @@
 ---
 title:  '2014 RAGBRAI XLII Route Announced!'
-category: route
+tags: route
 comments: false
 ragbrai: 2014
 ---
