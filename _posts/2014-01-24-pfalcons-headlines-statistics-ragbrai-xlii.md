@@ -1,6 +1,6 @@
 ---
 title:  'Headlines and Statistics for P-Falcons RAGBRAI XLII (Year of the unicorn)'
-category: headlines
+tags: headlines recap
 comments: false
 ragbrai: 2014
 image_url: /assets/images/blog/unicorn.jpg
