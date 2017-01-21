@@ -1,6 +1,6 @@
 ---
 title:  'Hello world...Again'
-category: website
+tags: website
 comments: false
 image_url: /assets/images/blog/hello-world.jpg
 ---
