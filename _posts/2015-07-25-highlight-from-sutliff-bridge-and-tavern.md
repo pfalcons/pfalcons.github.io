@@ -1,6 +1,6 @@
 ---
 title:  'Highlight from Sutliff Bridge and Tavern - Cupid Shuffle'
-category: video
+tags: video
 comments: false
 ragbrai: 2015
 ---
