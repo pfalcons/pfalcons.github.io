@@ -713,4 +713,15 @@
 
 "2017":
   name: XLV
+  mileage:
+  climb:
   logo: 2017.jpg
+  towns:
+    - 'Orange City'
+    - Spencer
+    - Algona
+    - 'Clear Lake'
+    - 'Charles City'
+    - Cresco
+    - Waukon
+    - Lansing
