@@ -44,6 +44,13 @@ layout: default-full
               </small></p>
             </div>
           </div>
+          {% if ragbrai_data['gallery_url'] %}
+          <div class="row row-centered">
+            <div class="col-md-4 col-centered gallery">
+              <a href="{{ ragbrai_data['gallery_url'] }}" class="btn btn-success btn-lg btn-block">View Media Gallery</a>
+            </div>
+          </div>
+          {% endif %}
         </div>
       </div>
     </div>
@@ -71,7 +78,7 @@ layout: default-full
   {% endif %}
 
 
-  {% if ragbrai_data['logo'] %}
+  {% if ragbrai_data['map'] %}
   <div class="container-wrapper ragbrai-map">
     <div class="container">
       <h2>RAGBRAI {{ ragbrai_data['name'] }} Route Map <small><a href="http://geobike.com">Source: GeoBike</a></small></h2>
