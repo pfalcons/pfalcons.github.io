@@ -717,6 +717,7 @@
   mileage:
   climb:
   logo: 2017.jpg
+  map: http://www.geobike.com/geobike/RAGBRAI/r45.kmz
   towns:
     - 'Orange City'
     - Spencer
