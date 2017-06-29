@@ -1,7 +1,8 @@
 ---
 title: Chris
 short_name: chris
-role: Team Lobbyist
+role: Team Lobbyist/Team Driver
 ragbrai: 2007
+active: true
 image: chris.jpg
 ---

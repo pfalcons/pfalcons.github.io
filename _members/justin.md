@@ -2,7 +2,6 @@
 title: Justin
 short_name: justin
 ragbrai: 2011
-active: true
 co-owner: true
 image: justin.jpg
 weight: -1
