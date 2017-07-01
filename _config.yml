@@ -37,7 +37,7 @@ sass:
 include: ['_pages']
 markdown: kramdown
 theme: minima
-gems:
+plugins_dir:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-seo-tag
