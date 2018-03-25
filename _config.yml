@@ -37,7 +37,7 @@ sass:
 include: ['_pages']
 markdown: kramdown
 theme: minima
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-seo-tag
@@ -46,10 +46,6 @@ permalink: /blog/:year/:month/:day/:title
 # Pagination.
 paginate: 5
 paginate_path: "blog/page:num"
-
-exclude:
-  - Gemfile
-  - Gemfile.lock
 
 collections:
   members:
