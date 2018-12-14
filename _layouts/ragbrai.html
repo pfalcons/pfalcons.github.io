@@ -140,17 +140,3 @@ layout: default-full
     </div>
   {% endif %}
 </div>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEG5GX4vYP06leaQsdTeng424HWvwydpg&callback=initMap"
-    async defer></script>
-<script type="text/javascript">
-function initMap() {
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 11,
-    scrollwheel: false,
-  });
-  var routeLayer = new google.maps.KmlLayer({
-    url: '{{ ragbrai_data['map'] }}',
-    map: map
-  });
-}
-</script>
