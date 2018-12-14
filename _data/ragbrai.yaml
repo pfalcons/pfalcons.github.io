@@ -745,8 +745,13 @@
     - Sigourney
     - 'Iowa City'
     - Davenport
-    
-"2019"
+
+"2019":
   name: XLVII
+  mileage:
+  climb:
   logo: 2019.jpg
+  map: 
+  gallery_url:
+  towns:
   
