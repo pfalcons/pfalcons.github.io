@@ -735,7 +735,7 @@
   climb: 12576
   logo: 2018.png
   map: 
-  gallery_url:
+  gallery_url: https://photos.app.goo.gl/ySKsFK3M2gvatkQR8
   towns:
     - Onawa
     - Denison
@@ -745,3 +745,8 @@
     - Sigourney
     - 'Iowa City'
     - Davenport
+    
+"2019"
+  name: XLVII
+  logo: 2019.jpg
+  
