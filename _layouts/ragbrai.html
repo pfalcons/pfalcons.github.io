@@ -77,18 +77,6 @@ layout: default-full
   </div>
   {% endif %}
 
-
-  {% if ragbrai_data['map'] %}
-  <div class="container-wrapper ragbrai-map">
-    <div class="container">
-      <h2>RAGBRAI {{ ragbrai_data['name'] }} Route Map <small><a href="http://geobike.com">Source: GeoBike</a></small></h2>
-    </div>
-    <div class="ragbrai-map-content">
-      <div id="map"></div>
-    </div>
-  </div>
-  {% endif %}
-
   {% assign posts = site.posts | where:"ragbrai",year %}
   {% if posts != empty %}
   <div class="container-wrapper ragbrai-posts">
