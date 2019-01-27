@@ -748,10 +748,18 @@
 
 "2019":
   name: XLVII
-  mileage:
-  climb:
+  mileage: 427
+  climb: 14735
   logo: 2019.jpg
   map: 
   gallery_url:
   towns:
+    - 'Council Bluffs'
+    - Atlantic
+    - Winterset
+    - Indianola
+    - Centerville
+    - Fairfield
+    - Burlington
+    - Keokuk
   
