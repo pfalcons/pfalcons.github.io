@@ -2,6 +2,6 @@
 title: Benjamin
 short_name: benjamin
 nickname: Bacon
-active: true
+active: false
 ragbrai: 2017
 ---
