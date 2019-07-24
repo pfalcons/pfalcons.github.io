@@ -1,0 +1,25 @@
+---
+label: Member
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: short_name
+  label: short_name
+- type: text
+  name: nickname
+  label: nickname
+- type: text
+  name: role
+  label: role
+- type: number
+  name: ragbrai
+  label: ragbrai
+- type: boolean
+  name: active
+  label: active
+- type: file
+  name: image
+  label: image
