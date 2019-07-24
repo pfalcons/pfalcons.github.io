@@ -4,10 +4,13 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: directory
-  path: _data
-  label: Data
-  create: none
+- type: document
+  path: _data/quotes.csv
+  label: Quotes
+  match: "**/*"
+- type: document
+  path: _data/ragbrai.yaml
+  label: RAGBRAI Data
   match: "**/*"
 - type: jekyll-pages
   label: Pages
