@@ -10,9 +10,13 @@ sections:
 - type: jekyll-pages
   label: Pages
   create: all
+  templates:
+  - page
 - type: jekyll-posts
   label: Posts
   create: all
+  templates:
+  - post
 - type: directory
   path: _ragbrai
   label: Ragbrai
@@ -26,6 +30,8 @@ sections:
   label: Members
   create: all
   match: "**/*"
+  templates:
+  - member
 upload_dir: assets
 public_path: "/assets"
 front_matter_path: ''
