@@ -23,10 +23,9 @@ fields:
   description: e.g. 2006
 - type: boolean
   name: active
-  label: Current Team Member
-  description: True/False - Are they boarding the bus this year. Notice how I didn't
-    say riding their bike this year?
+  label: Active Team Member
+  description: Are they boarding the bus this year? Notice how I didn't say riding
+    their bike this year?
 - type: file
   name: image
   label: Image
-  description: joe.jpg (Located in the assets/images/members directory)
