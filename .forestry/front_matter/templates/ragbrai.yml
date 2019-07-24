@@ -4,4 +4,7 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: RAGBRAI
+  description: e.g. 2006
+  config:
+    required: true
