@@ -4,7 +4,9 @@ hide_body: false
 fields:
 - type: text
   name: layout
-  label: layout
+  label: Layout
+  default: default
+  hidden: true
 - type: text
   name: title
-  label: title
+  label: Title
