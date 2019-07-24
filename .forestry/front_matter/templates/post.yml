@@ -11,11 +11,9 @@ fields:
 - type: boolean
   name: comments
   label: Enable Comments
-  description: true/false
 - type: file
   name: image_url
-  label: Featured Image Path
-  description: relative/path/to/file.jpg
+  label: Featured Image
 - name: ragbrai
   type: text
   config:
