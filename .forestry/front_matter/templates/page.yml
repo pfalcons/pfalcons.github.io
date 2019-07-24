@@ -10,3 +10,5 @@ fields:
 - type: text
   name: title
   label: Title
+pages:
+- howto-update-the-site.md
