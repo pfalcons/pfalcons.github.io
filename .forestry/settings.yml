@@ -5,9 +5,6 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
-  path: _data/quotes.csv
-  label: Quotes
-- type: document
   path: _data/ragbrai.yaml
   label: RAGBRAI Data
 - type: jekyll-pages
@@ -25,6 +22,10 @@ sections:
   path: _members
   label: Members
   create: all
+  match: "**/*"
+- type: document
+  path: _data/quotes.csv
+  label: Quotes
   match: "**/*"
 upload_dir: assets
 public_path: "/assets"
