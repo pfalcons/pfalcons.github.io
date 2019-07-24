@@ -4,13 +4,21 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
 - type: text
   name: tags
-  label: tags
+  label: Tags
 - type: boolean
   name: comments
-  label: comments
+  label: Enable Comments
+  description: true/false
 - type: file
   name: image_url
-  label: image_url
+  label: Featured Image Path
+  description: relative/path/to/file.jpg
+- name: ragbrai
+  type: text
+  config:
+    required: false
+  label: RAGBRAI
+  description: e.g. 2006
