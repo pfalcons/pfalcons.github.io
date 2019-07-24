@@ -22,6 +22,8 @@ sections:
   label: Ragbrai
   create: all
   match: "**/*"
+  templates:
+  - ragbrai
 - type: document
   path: _data/ragbrai.yaml
   label: RAGBRAI Data
