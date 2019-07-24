@@ -4,22 +4,29 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Name
+  description: Protect the innocent. No last names
 - type: text
   name: short_name
-  label: short_name
+  label: Short Name
+  description: William the Conqueror becomes "will_c" if there are more than one on
+    the team. Used for tagging quotes, etc.
 - type: text
   name: nickname
-  label: nickname
+  label: Nickname
 - type: text
   name: role
-  label: role
+  label: Team Position/Role
 - type: number
   name: ragbrai
-  label: ragbrai
+  label: First RAGBRAI year with the Perineum Falcons
+  description: e.g. 2006
 - type: boolean
   name: active
-  label: active
+  label: Current Team Member
+  description: True/False - Are they boarding the bus this year. Notice how I didn't
+    say riding their bike this year?
 - type: file
   name: image
-  label: image
+  label: Image
+  description: joe.jpg (Located in the assets/images/members directory)
