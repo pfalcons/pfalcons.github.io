@@ -1,9 +1,6 @@
 ---
-title: RAGBRAI Breastfeeding
-tags: ''
+title: Perineum Falcons Guide to Lactating on Ragbrai
 comments: true
-ragbrai: ''
-
 ---
 We tried to out a mini fridge on the bus my first time to save the milk. The bus couldn't handle it. So mike dumped most of my milk. It was kind of freeing bc then I could drink without worry. The last time I pumped with the twins I rode just one day so any time I pumped near the bus I tossed my milk in the cooler which worked out well. You'll need to drink tons of water and expect a slight dip in production which may or may not be temp/perm. Although i did tend to stretch out my pumps longer compared to when nursing but you don't have to do that. I just fucking hate pumping so much.
 
