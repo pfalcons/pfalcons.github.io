@@ -2,7 +2,6 @@
 title: RAGBRAI Breastfeeding
 tags: ''
 comments: true
-image_url: ''
 ragbrai: ''
 
 ---
