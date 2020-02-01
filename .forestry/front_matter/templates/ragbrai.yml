@@ -8,3 +8,5 @@ fields:
   description: e.g. 2006
   config:
     required: true
+pages:
+- _ragbrai/2020.md
