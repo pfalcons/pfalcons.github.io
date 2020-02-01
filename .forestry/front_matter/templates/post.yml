@@ -20,3 +20,5 @@ fields:
     required: false
   label: RAGBRAI
   description: e.g. 2006
+pages:
+- _posts/ragbrai-breastfeeding.md
