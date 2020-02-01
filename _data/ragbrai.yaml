@@ -1,816 +1,768 @@
-"1973":
+---
+'1973':
   name: I
-  mileage: 442.7
-  climb: 17869
-  logo:
+  mileage: "442.7"
+  climb: "17869"
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r1.kmz
   towns:
-    - 'Sioux City'
-    - 'Storm Lake'
-    - 'Fort Dodge'
-    - Ames
-    - 'Des Moines'
-    - Williamsburg
-    - Davenport
-    - ""
-
-"1974":
+  - Sioux City
+  - Storm Lake
+  - Fort Dodge
+  - Ames
+  - Des Moines
+  - Williamsburg
+  - Davenport
+  - ''
+'1974':
   name: II
-  mileage: 427.7
-  climb: 20687
-  logo:
+  mileage: "427.7"
+  climb: "20687"
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r2.kmz
   towns:
-    - 'Council Bluffs'
-    - Atlantic
-    - 'Guthrie Center'
-    - 'Camp Dodge'
-    - Marshalltown
-    - Waterloo
-    - Monticello
-    - Dubuque
-
-"1975":
+  - Council Bluffs
+  - Atlantic
+  - Guthrie Center
+  - Camp Dodge
+  - Marshalltown
+  - Waterloo
+  - Monticello
+  - Dubuque
+'1975':
   name: III
-  mileage: 464.3
-  climb: 16994
-  logo:
+  mileage: "464.3"
+  climb: "16994"
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r3.kmz
   towns:
-    - Hawarden
-    - Cherokee
-    - 'Lake View'
-    - Boone
-    - Newton
-    - Sigourney
-    - 'Mt. Pleasant'
-    - 'Fort Madison'
-
-"1976":
+  - Hawarden
+  - Cherokee
+  - Lake View
+  - Boone
+  - Newton
+  - Sigourney
+  - Mt. Pleasant
+  - Fort Madison
+'1976':
   name: IV
-  mileage: 445.2
-  climb: 19595
-  logo:
+  mileage: "445.2"
+  climb: "19595"
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r4.kmz
   towns:
-    - Sidney
-    - 'Red Oak'
-    - Harlan
-    - Jefferson
-    - Nevada
-    - Grinnell
-    - 'Iowa City'
-    - Muscatine
-
-"1977":
+  - Sidney
+  - Red Oak
+  - Harlan
+  - Jefferson
+  - Nevada
+  - Grinnell
+  - Iowa City
+  - Muscatine
+'1977':
   name: V
-  mileage: 379.2
-  climb: 10675
-  logo:
+  mileage: "379.2"
+  climb: "10675"
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r5.kmz
   towns:
-    - Onawa
-    - 'Ida Grove'
-    - Laurens
-    - Algona
-    - 'Clear Lake'
-    - 'New Hampton'
-    - Decorah
-    - Lansing
-
-"1978":
+  - Onawa
+  - Ida Grove
+  - Laurens
+  - Algona
+  - Clear Lake
+  - New Hampton
+  - Decorah
+  - Lansing
+'1978':
   name: VI
-  mileage: 450.0
-  climb: 16462
-  logo:
+  mileage: "450"
+  climb: "16462"
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r6.kmz
   towns:
-    - 'Sioux City'
-    - 'Storm Lake'
-    - Humboldt
-    - 'Iowa Falls'
-    - Vinton
-    - 'Mt. Vernon'
-    - Maquoketa
-    - Clinton
-
-"1979":
+  - Sioux City
+  - Storm Lake
+  - Humboldt
+  - Iowa Falls
+  - Vinton
+  - Mt. Vernon
+  - Maquoketa
+  - Clinton
+'1979':
   name: VII
-  mileage: 505.8
-  climb: 15187
-  logo:
+  mileage: "505.8"
+  climb: "15187"
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r7.kmz
   towns:
-    - 'Rock Rapids'
-    - Spencer
-    - 'Rockwell City'
-    - 'Story City'
-    - Tama
-    - Fairfield
-    - Wapello
-    - Burlington
-
-"1980":
+  - Rock Rapids
+  - Spencer
+  - Rockwell City
+  - Story City
+  - Tama
+  - Fairfield
+  - Wapello
+  - Burlington
+'1980':
   name: VIII
-  mileage: 483.8
-  climb: 22579
-  logo:
+  mileage: "483.8"
+  climb: "22579"
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r8.kmz
   towns:
-    - Glenwood
-    - Atlantic
-    - Carroll
-    - Perry
-    - 'Webster City'
-    - Waverly
-    - Elkader
-    - Guttenberg
-
-"1981":
+  - Glenwood
+  - Atlantic
+  - Carroll
+  - Perry
+  - Webster City
+  - Waverly
+  - Elkader
+  - Guttenberg
+'1981':
   name: IX
-  mileage: 505.1
-  climb: 26374
-  logo:
+  mileage: "505.1"
+  climb: "26374"
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r9.kmz
   towns:
-    - 'Missouri Valley'
-    - Mapleton
-    - 'Lake City'
-    - Greenfield
-    - Leon
-    - Centerville
-    - Keosauqua
-    - Keokuk
-
-"1982":
+  - Missouri Valley
+  - Mapleton
+  - Lake City
+  - Greenfield
+  - Leon
+  - Centerville
+  - Keosauqua
+  - Keokuk
+'1982':
   name: X
-  mileage: 517.1
-  climb: 16357
-  logo:
+  mileage: "517.1"
+  climb: "16357"
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r10.kmz
   towns:
-    - Akron
-    - Cherokee
-    - Estherville
-    - 'Forest City'
-    - 'Charles City'
-    - Independence
-    - Tipton
-    - Davenport
-
-"1983":
+  - Akron
+  - Cherokee
+  - Estherville
+  - Forest City
+  - Charles City
+  - Independence
+  - Tipton
+  - Davenport
+'1983':
   name: XI
-  mileage: 488.5
-  climb: 19791
-  logo:
+  mileage: "488.5"
+  climb: "19791"
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r11.kmz
   towns:
-    - Onawa
-    - Harlan
-    - Guthrie
-    - Ames
-    - Clarion
-    - 'Grundy Center'
-    - Manchester
-    - Dubuque
-
-"1984":
+  - Onawa
+  - Harlan
+  - Guthrie
+  - Ames
+  - Clarion
+  - Grundy Center
+  - Manchester
+  - Dubuque
+'1984':
   name: XII
-  mileage: 471.7
-  climb: 21709
-  logo:
+  mileage: "471.7"
+  climb: "21709"
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r12.kmz
   towns:
-    - Glenwood
-    - Shenandoah
-    - Creston
-    - Adel
-    - Pella
-    - Ottumwa
-    - 'Mt. Pleasant'
-    - Burlington
-
-"1985":
+  - Glenwood
+  - Shenandoah
+  - Creston
+  - Adel
+  - Pella
+  - Ottumwa
+  - Mt. Pleasant
+  - Burlington
+'1985':
   name: XIII
-  mileage: 550.1
-  climb: 15648
-  logo:
+  mileage: "550.1"
+  climb: "15648"
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r13.kmz
   towns:
-    - Hawarden
-    - Sibley
-    - Emmetsburg
-    - Humboldt
-    - 'Mason City'
-    - Waterloo
-    - Monticello
-    - Clinton
-
-"1986":
+  - Hawarden
+  - Sibley
+  - Emmetsburg
+  - Humboldt
+  - Mason City
+  - Waterloo
+  - Monticello
+  - Clinton
+'1986':
   name: XIV
-  mileage: 495.4
-  climb: 22424
-  logo:
+  mileage: "495.4"
+  climb: "22424"
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r14.kmz
   towns:
-    - 'Council Bluffs'
-    - 'Red Oak'
-    - Audubon
-    - Perry
-    - Eldora
-    - 'Belle Plaine'
-    - Washington
-    - Muscatine
-
-"1987":
+  - Council Bluffs
+  - Red Oak
+  - Audubon
+  - Perry
+  - Eldora
+  - Belle Plaine
+  - Washington
+  - Muscatine
+'1987':
   name: XV
-  mileage: 450.5
-  climb: 15611
-  logo:
+  mileage: "450.5"
+  climb: "15611"
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r15.kmz
   towns:
-    - Onawa
-    - Denison
-    - 'Storm Lake'
-    - 'Fort Dodge'
-    - 'Forest City'
-    - Osage
-    - 'West Union'
-    - Guttenberg
-
-"1988":
+  - Onawa
+  - Denison
+  - Storm Lake
+  - Fort Dodge
+  - Forest City
+  - Osage
+  - West Union
+  - Guttenberg
+'1988':
   name: XVI
-  mileage: 434.1
-  climb: 18304
-  logo:
+  mileage: "434.1"
+  climb: "18304"
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r16.kmz
   towns:
-    - 'Sioux City'
-    - 'Ida Grove'
-    - Carroll
-    - Boone
-    - 'Des Moines'
-    - Oskaloosa
-    - Fairfield
-    - 'Fort Madison'
-
-"1989":
+  - Sioux City
+  - Ida Grove
+  - Carroll
+  - Boone
+  - Des Moines
+  - Oskaloosa
+  - Fairfield
+  - Fort Madison
+'1989':
   name: XVII
-  mileage: 488.9
-  climb: 21855
-  logo:
+  mileage: "488.9"
+  climb: "21855"
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r17.kmz
   towns:
-    - Glenwood
-    - Clarinda
-    - Atlantic
-    - Jefferson
-    - 'Story City'
-    - 'Cedar Falls'
-    - Dyersville
-    - Bellevue
-
-"1990":
+  - Glenwood
+  - Clarinda
+  - Atlantic
+  - Jefferson
+  - Story City
+  - Cedar Falls
+  - Dyersville
+  - Bellevue
+'1990':
   name: XVIII
-  mileage: 496.0
-  climb: 13344
-  logo:
+  mileage: "496"
+  climb: "13344"
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r18.kmz
   towns:
-    - 'Sioux Center'
-    - Spencer
-    - Algona
-    - Hampton
-    - Oelwein
-    - 'Cedar Rapids'
-    - Washington
-    - Burlington
-
-"1991":
+  - Sioux Center
+  - Spencer
+  - Algona
+  - Hampton
+  - Oelwein
+  - Cedar Rapids
+  - Washington
+  - Burlington
+'1991':
   name: XIX
-  mileage: 427.8
-  climb: 23162
-  logo:
+  mileage: "427.8"
+  climb: "23162"
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r19.kmz
   towns:
-    - 'Missouri Valley'
-    - Atlantic
-    - Winterset
-    - Knoxville
-    - Grinnell
-    - Amana
-    - Anamosa
-    - Bellevue
-
-"1992":
+  - Missouri Valley
+  - Atlantic
+  - Winterset
+  - Knoxville
+  - Grinnell
+  - Amana
+  - Anamosa
+  - Bellevue
+'1992':
   name: XX
-  mileage: 488.3
-  climb: 24716
-  logo:
+  mileage: "488.3"
+  climb: "24716"
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r20.kmz
   towns:
-    - Glenwood
-    - Shenandoah
-    - Bedford
-    - Osceola
-    - 'Des Moines'
-    - Oskaloosa
-    - 'Mt. Pleasant'
-    - Keokuk
-
-"1993":
+  - Glenwood
+  - Shenandoah
+  - Bedford
+  - Osceola
+  - Des Moines
+  - Oskaloosa
+  - Mt. Pleasant
+  - Keokuk
+'1993':
   name: XXI
-  mileage: 536.0
-  climb: 18280
-  logo:
+  mileage: "536"
+  climb: "18280"
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r21.kmz
   towns:
-    - 'Sioux City'
-    - Sheldon
-    - Emmetsburg
-    - Clarion
-    - Osage
-    - Decorah
-    - Manchester
-    - Dubuque
-
-"1994":
+  - Sioux City
+  - Sheldon
+  - Emmetsburg
+  - Clarion
+  - Osage
+  - Decorah
+  - Manchester
+  - Dubuque
+'1994':
   name: XXII
-  mileage: 507.2
-  climb: 23260
-  logo:
+  mileage: "507.2"
+  climb: "23260"
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r22.kmz
   towns:
-    - 'Council Bluffs'
-    - Harlan
-    - Carroll
-    - Perry
-    - Marshalltown
-    - Marion
-    - Maquoketa
-    - Clinton
-
-"1995":
+  - Council Bluffs
+  - Harlan
+  - Carroll
+  - Perry
+  - Marshalltown
+  - Marion
+  - Maquoketa
+  - Clinton
+'1995':
   name: XXIII
-  mileage: 481.1
-  climb: 18003
-  logo:
+  mileage: "481.1"
+  climb: "18003"
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r23.kmz
   towns:
-    - Onawa
-    - 'Lake View'
-    - 'Fort Dodge'
-    - 'Iowa Falls'
-    - Tama/Toledo
-    - Sigourney
-    - Coralville
-    - Muscatine
-
-"1996":
+  - Onawa
+  - Lake View
+  - Fort Dodge
+  - Iowa Falls
+  - Tama/Toledo
+  - Sigourney
+  - Coralville
+  - Muscatine
+'1996':
   name: XXIV
-  mileage: 428.7
-  climb: 14299
-  logo:
+  mileage: "428.7"
+  climb: "14299"
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r24.kmz
   towns:
-    - 'Sioux Center'
-    - Sibley
-    - Estherville
-    - 'Lake Mills'
-    - 'Charles City'
-    - Cresco
-    - Fayette
-    - Guttenberg
-
-"1997":
+  - Sioux Center
+  - Sibley
+  - Estherville
+  - Lake Mills
+  - Charles City
+  - Cresco
+  - Fayette
+  - Guttenberg
+'1997':
   name: XXV
-  mileage: 459.2
-  climb: 25369
-  logo:
+  mileage: "459.2"
+  climb: "25369"
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r25.kmz
   towns:
-    - 'Missouri Valley'
-    - 'Red Oak'
-    - Creston
-    - 'Des Moines'
-    - Chariton
-    - Bloomfield
-    - Fairfield
-    - 'Fort Madison'
-
-"1998":
+  - Missouri Valley
+  - Red Oak
+  - Creston
+  - Des Moines
+  - Chariton
+  - Bloomfield
+  - Fairfield
+  - Fort Madison
+'1998':
   name: XXVI
-  mileage: 479.4
-  climb: 18495
-  logo:
+  mileage: "479.4"
+  climb: "18495"
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r26.kmz
   towns:
-    - Hawarden
-    - Cherokee
-    - 'Rockwell City'
-    - Boone
-    - Eldora
-    - 'Cedar Falls'
-    - Monticello
-    - Sabula
-
-"1999":
+  - Hawarden
+  - Cherokee
+  - Rockwell City
+  - Boone
+  - Eldora
+  - Cedar Falls
+  - Monticello
+  - Sabula
+'1999':
   name: XXVII
-  mileage: 520.0
-  climb: 18318
-  logo:
+  mileage: "520"
+  climb: "18318"
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r27.kmz
   towns:
-    - 'Rock Rapids'
-    - Spencer
-    - Algona
-    - 'Clear Lake'
-    - Waverly
-    - Decorah
-    - Manchester
-    - Bellevue
-
-"2000":
+  - Rock Rapids
+  - Spencer
+  - Algona
+  - Clear Lake
+  - Waverly
+  - Decorah
+  - Manchester
+  - Bellevue
+'2000':
   name: XXVIII
-  mileage: 488.9
-  climb: 22885
-  logo:
+  mileage: "488.9"
+  climb: "22885"
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r28.kmz
   towns:
-    - 'Council Bluffs'
-    - Harlan
-    - Greenfield
-    - Ankeny
-    - Knoxville
-    - Ottumwa
-    - Washington
-    - Burlington
-
-"2001":
+  - Council Bluffs
+  - Harlan
+  - Greenfield
+  - Ankeny
+  - Knoxville
+  - Ottumwa
+  - Washington
+  - Burlington
+'2001':
   name: XXIX
-  mileage: 517.0
-  climb: 25543
-  logo:
+  mileage: "517"
+  climb: "25543"
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r29.kmz
   towns:
-    - 'Sioux City'
-    - 'Storm Lake'
-    - Denison
-    - Atlantic
-    - Perry
-    - Grinnell
-    - Coralville
-    - Muscatine
-
-"2002":
+  - Sioux City
+  - Storm Lake
+  - Denison
+  - Atlantic
+  - Perry
+  - Grinnell
+  - Coralville
+  - Muscatine
+'2002':
   name: XXX
-  mileage: 487.7
-  climb: 15656
-  logo:
+  mileage: "487.7"
+  climb: "15656"
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r30.kmz
   towns:
-    - 'Sioux Center'
-    - Cherokee
-    - Emmetsburg
-    - 'Forest City'
-    - 'Charles City'
-    - Oelwein
-    - Anamosa
-    - Bellevue
-
-"2003":
+  - Sioux Center
+  - Cherokee
+  - Emmetsburg
+  - Forest City
+  - Charles City
+  - Oelwein
+  - Anamosa
+  - Bellevue
+'2003':
   name: XXXI
-  mileage: 443.6
-  climb: 23149
-  logo:
+  mileage: "443.6"
+  climb: "23149"
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r31.kmz
   towns:
-    - Glenwood
-    - Shenandoah
-    - Bedford
-    - Osceola
-    - Oskaloosa
-    - Bloomfield
-    - 'Mt. Pleasant'
-    - 'Fort Madison'
-
-"2004":
+  - Glenwood
+  - Shenandoah
+  - Bedford
+  - Osceola
+  - Oskaloosa
+  - Bloomfield
+  - Mt. Pleasant
+  - Fort Madison
+'2004':
   name: XXXII
-  mileage: 486.8
-  climb: 18425
-  logo:
+  mileage: "486.8"
+  climb: "18425"
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r32.kmz
   towns:
-    - Onawa
-    - 'Lake View'
-    - 'Fort Dodge'
-    - 'Iowa Falls'
-    - Marshalltown
-    - Hiawatha
-    - Maquoketa
-    - Clinton
-
-"2005":
+  - Onawa
+  - Lake View
+  - Fort Dodge
+  - Iowa Falls
+  - Marshalltown
+  - Hiawatha
+  - Maquoketa
+  - Clinton
+'2005':
   name: XXXIII
-  mileage: 484.4
-  climb: 15294
-  logo:
+  mileage: "484.4"
+  climb: "15294"
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r33.kmz
   towns:
-    - 'Le Mars'
-    - Sheldon
-    - Estherville
-    - Algona
-    - Northwood
-    - Cresco
-    - 'West Union'
-    - Guttenberg
-
-"2006":
+  - Le Mars
+  - Sheldon
+  - Estherville
+  - Algona
+  - Northwood
+  - Cresco
+  - West Union
+  - Guttenberg
+'2006':
   name: XXXIV
-  mileage: 444.4
-  climb: 23170
+  mileage: "444.4"
+  climb: "23170"
   logo: 2006.jpg
   map: http://www.geobike.com/geobike/RAGBRAI/r34.kmz
   gallery_url: https://goo.gl/photos/fL2qrbtcVo341vrc7
   towns:
-    - 'Sergeant Bluff'
-    - 'Ida Grove'
-    - Audubon
-    - Waukee
-    - Newton
-    - Marengo
-    - Coralville
-    - Muscatine
-"2007":
+  - Sergeant Bluff
+  - Ida Grove
+  - Audubon
+  - Waukee
+  - Newton
+  - Marengo
+  - Coralville
+  - Muscatine
+'2007':
   name: XXXV
-  mileage: 478.8
-  climb: 13624
+  mileage: "478.8"
+  climb: "13624"
   logo: 2007.jpg
   map: http://www.geobike.com/geobike/RAGBRAI/r35.kmz
   gallery_url: https://goo.gl/photos/veghQPA3HcxnTyCn6
   towns:
-    - 'Rock Rapids'
-    - Spencer
-    - Humboldt
-    - Hampton
-    - 'Cedar Falls'
-    - Independence
-    - Dyersville
-    - Bellevue
-
-"2008":
+  - Rock Rapids
+  - Spencer
+  - Humboldt
+  - Hampton
+  - Cedar Falls
+  - Independence
+  - Dyersville
+  - Bellevue
+'2008':
   name: XXXVI
-  mileage: 459.8
-  climb: 21215
+  mileage: "459.8"
+  climb: "21215"
   logo: 2008.jpg
   map: http://www.geobike.com/geobike/RAGBRAI/r36.kmz
   gallery_url: https://goo.gl/photos/VYekzRX1iV1N1mHTA
   towns:
-    - 'Missouri Valley'
-    - Harlan
-    - Jefferson
-    - Ames
-    - Tama/Toledo
-    - 'North Liberty'
-    - Tipton
-    - 'Le Claire'
-
-"2009":
+  - Missouri Valley
+  - Harlan
+  - Jefferson
+  - Ames
+  - Tama/Toledo
+  - North Liberty
+  - Tipton
+  - Le Claire
+'2009':
   name: XXXVII
-  mileage: 447.0
-  climb: 23111
+  mileage: "447"
+  climb: "23111"
   logo: 2009.jpg
   map: http://www.geobike.com/geobike/RAGBRAI/r37.kmz
   gallery_url: https://goo.gl/photos/xajAoRd2fEEfrGMB7
   towns:
-    - 'Council Bluffs'
-    - 'Red Oak'
-    - Greenfield
-    - Indianola
-    - Chariton
-    - Ottumwa
-    - 'Mt. Pleasant'
-    - Burlington
-
-"2010":
+  - Council Bluffs
+  - Red Oak
+  - Greenfield
+  - Indianola
+  - Chariton
+  - Ottumwa
+  - Mt. Pleasant
+  - Burlington
+'2010':
   name: XXXVIII
-  mileage: 450.6
-  climb: 14860
+  mileage: "450.6"
+  climb: "14860"
   logo: 2010.jpg
   map: http://www.geobike.com/geobike/RAGBRAI/r38.kmz
   gallery_url: https://goo.gl/photos/bdsf9tXq9c6kb1xQ6
   towns:
-    - 'Sioux City'
-    - 'Storm Lake'
-    - Algona
-    - 'Clear Lake'
-    - 'Charles City'
-    - Waterloo
-    - Manchester
-    - Dubuque
-
-"2011":
+  - Sioux City
+  - Storm Lake
+  - Algona
+  - Clear Lake
+  - Charles City
+  - Waterloo
+  - Manchester
+  - Dubuque
+'2011':
   name: XXXIX
-  mileage: 445.4
-  climb: 20371
+  mileage: "445.4"
+  climb: "20371"
   logo: 2011.jpg
   map: http://www.geobike.com/geobike/RAGBRAI/r39.kmz
   gallery_url: https://goo.gl/photos/idFFv2dCktiPDch97
   towns:
-    - Glenwood
-    - Atlantic
-    - Carroll
-    - Boone
-    - Altoona
-    - Grinnell
-    - Coralville
-    - Davenport
-
-"2012":
+  - Glenwood
+  - Atlantic
+  - Carroll
+  - Boone
+  - Altoona
+  - Grinnell
+  - Coralville
+  - Davenport
+'2012':
   name: XL
-  mileage: 474.4
-  climb: 16165
+  mileage: "474.4"
+  climb: "16165"
   logo: 2012.jpg
   map: http://www.geobike.com/geobike/RAGBRAI/r40.kmz
   gallery_url: https://goo.gl/photos/NseYZK1QMsf7n7KU6
   towns:
-    - 'Sioux Center'
-    - Cherokee
-    - 'Lake View'
-    - 'Webster City'
-    - Marshalltown
-    - 'Cedar Rapids'
-    - Anamosa
-    - Clinton
-
-"2013":
+  - Sioux Center
+  - Cherokee
+  - Lake View
+  - Webster City
+  - Marshalltown
+  - Cedar Rapids
+  - Anamosa
+  - Clinton
+'2013':
   name: XLI
-  mileage: 397.6
-  climb: 15127
+  mileage: "397.6"
+  climb: "15127"
   logo: 2013.jpg
   map: http://www.geobike.com/geobike/RAGBRAI/r41.kmz
   gallery_url: https://goo.gl/photos/jHC4pttvuDgrxTah7
   towns:
-    - 'Council Bluffs'
-    - Harlan
-    - Perry
-    - 'Des Moines'
-    - Knoxville
-    - Oskaloosa
-    - Fairfield
-    - 'Fort Madison'
-
-"2014":
+  - Council Bluffs
+  - Harlan
+  - Perry
+  - Des Moines
+  - Knoxville
+  - Oskaloosa
+  - Fairfield
+  - Fort Madison
+'2014':
   name: XLII
-  mileage: 435.5
-  climb: 10752
+  mileage: "435.5"
+  climb: "10752"
   logo: 2014.png
   map: http://www.geobike.com/geobike/RAGBRAI/r42.kmz
   gallery_url: https://goo.gl/photos/PrYdADZ4cdeVUyqa9
   towns:
-    - 'Rock Valley'
-    - Okoboji
-    - Emmetsburg
-    - 'Forest City'
-    - 'Mason City'
-    - Waverly
-    - Independence
-    - Guttenberg
-
-"2015":
+  - Rock Valley
+  - Okoboji
+  - Emmetsburg
+  - Forest City
+  - Mason City
+  - Waverly
+  - Independence
+  - Guttenberg
+'2015':
   name: XLIII
-  mileage: 479.3
-  climb: 15237
+  mileage: "479.3"
+  climb: "15237"
   logo: 2015.png
   map: http://www.geobike.com/geobike/RAGBRAI/r43.kmz
   gallery_url: https://goo.gl/photos/4fHEe29eVAJ2PWk87
   towns:
-    - 'Sioux City'
-    - 'Storm Lake'
-    - 'Fort Dodge'
-    - Eldora
-    - 'Cedar Falls'
-    - Hiawatha
-    - Coralville
-    - Davenport
-
-"2016":
+  - Sioux City
+  - Storm Lake
+  - Fort Dodge
+  - Eldora
+  - Cedar Falls
+  - Hiawatha
+  - Coralville
+  - Davenport
+'2016':
   name: XLIV
-  mileage: 419.8
-  climb: 18872
+  mileage: "419.8"
+  climb: "18872"
   logo: 2016.jpg
   map: http://www.geobike.com/geobike/RAGBRAI/r44.kmz
   gallery_url: https://goo.gl/photos/86ZYJDMULsMfDuBd6
   towns:
-    - Glenwood
-    - Shenandoah
-    - Creston
-    - Leon
-    - Centerville
-    - Ottumwa
-    - Washington
-    - Muscatine
-
-"2017":
+  - Glenwood
+  - Shenandoah
+  - Creston
+  - Leon
+  - Centerville
+  - Ottumwa
+  - Washington
+  - Muscatine
+'2017':
   name: XLV
-  mileage: 402.7
-  climb: 12778
+  mileage: "402.7"
+  climb: "12778"
   logo: 2017.jpg
   map: http://www.geobike.com/geobike/RAGBRAI/r45.kmz
   gallery_url: https://goo.gl/photos/V1oj5bpQEc8HjJjg6
   towns:
-    - 'Orange City'
-    - Spencer
-    - Algona
-    - 'Clear Lake'
-    - 'Charles City'
-    - Cresco
-    - Waukon
-    - Lansing
-    
-"2018":
+  - Orange City
+  - Spencer
+  - Algona
+  - Clear Lake
+  - Charles City
+  - Cresco
+  - Waukon
+  - Lansing
+'2018':
   name: XLVI
-  mileage: 428.1
-  climb: 12576
+  mileage: "428.1"
+  climb: "12576"
   logo: 2018.png
   map: 
   gallery_url: https://photos.app.goo.gl/ySKsFK3M2gvatkQR8
   towns:
-    - Onawa
-    - Denison
-    - Jefferson
-    - Ames
-    - Newton
-    - Sigourney
-    - 'Iowa City'
-    - Davenport
-
-"2019":
+  - Onawa
+  - Denison
+  - Jefferson
+  - Ames
+  - Newton
+  - Sigourney
+  - Iowa City
+  - Davenport
+'2019':
   name: XLVII
-  mileage: 427
-  climb: 14735
+  mileage: "427"
+  climb: "14735"
   logo: 2019.jpg
   map: 
-  gallery_url:
+  gallery_url: 
   towns:
-    - 'Council Bluffs'
-    - Atlantic
-    - Winterset
-    - Indianola
-    - Centerville
-    - Fairfield
-    - Burlington
-    - Keokuk
-
-"2020":
+  - Council Bluffs
+  - Atlantic
+  - Winterset
+  - Indianola
+  - Centerville
+  - Fairfield
+  - Burlington
+  - Keokuk
+'2020':
+  name: XLVIII
+  mileage: "420.3"
+  climb: '12,306'
+  logo: 2020.png
+  map: 
+  gallery_url: 
+  towns:
+  - Le Mars
+  - Storm Lake
+  - Fort Dodge
+  - Iowa Falls
+  - Waterloo
+  - Anamosa
+  - Maquoketa
+  - Clinton
+'2021':
   name: 
   mileage: 
   climb: 
   logo: 
   map: 
-  gallery_url:
+  gallery_url: 
   towns:
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-
-"2021":
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+'2022':
   name: 
   mileage: 
   climb: 
   logo: 
   map: 
-  gallery_url:
+  gallery_url: 
   towns:
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-
-
-"2022":
-  name: 
-  mileage: 
-  climb: 
-  logo: 
-  map: 
-  gallery_url:
-  towns:
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
