@@ -5,37 +5,39 @@ weight: 6
 icon: fa-envelope
 permalink: /contact/
 ---
-
-<!-- Hidden message to show if contact is successful. -->
-<div id="submit-success" class="alert alert-success alert-dismissible collapse" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <strong>Message Sent!</strong><br />
-  We may or may not be in touch.
-</div>
-
-<!-- Hidden message to show if user encounters errors. -->
-<div id="submit-errors" class="alert alert-warning alert-dismissible collapse" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <strong>Whoa! Something went wrong.</strong><br />
-  Clearly email is not your thing. Find us on RAGBRAI instead.
-</div>
-
-<p>Send us a message, or don't.</p>
-<form id="contact-form" action="https://formspree.io/f/xdoynwyr"
-      method="POST">
+<form id="contact-form" action="https://formspree.io/f/xdoynwyr" method="POST">
   <div class="form-group">
-    <label for="email">Email</label>
-    <input type="email" class="form-control" id="email" name="_replyto" required>
+  <label for="email">Email:</label>
+  <input type="email" class="form-control" name="email" />
   </div>
   <div class="form-group">
-    <label for="message">Message</label>
-    <textarea class="form-control" id="message" name="message" rows="3"></textarea>
-    <input type="text" name="_gotcha" style="display:none" />
-    <input type="hidden" name="_next" value="//pfalcons.github.io/contact" />
-    </div>
-  <button type="submit" class="btn btn-primary" value="Send">Submit</button>
+  <label for="message">Message:</label>
+  <input type="text" class="form-control" name="message" />
+  </div>
+  <button id="contact-form-button" class="btn btn-primary">Submit</button>
+  <p id="contact-form-status"></p>
 </form>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
-<script src="/scripts/custom.js"></script>
+<script>
+    var form = document.getElementById("contact-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("contact-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        status.innerHTML = "Thanks for your submission! We may or may not be in contact";
+        form.reset()
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form. Clearly email is not your thing. Find us on RAGBRAI instead."
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
+
