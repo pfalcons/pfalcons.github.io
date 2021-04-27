@@ -5,6 +5,15 @@ weight: 6
 icon: fa-envelope
 permalink: /contact/
 ---
+<style>
+#g-recaptcha-response {
+display: block !important;
+position: absolute;
+margin: -50px 0 0 0 !important;
+z-index: -999999;
+opacity: 0;
+}
+</style>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <form id="contact-form" action="https://formspree.io/f/xdoynwyr" method="POST">
   <div class="form-group">
