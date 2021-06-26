@@ -4,7 +4,11 @@
     {% if member.image %}<p><img class="img-thumbnail member-image" src="/assets/images/members/{{ member.image }}" alt="{{ member.title }}" /></p>{% endif %}
     </div>
     <div class="col-md-7">
-      <h2><a href="{{ member.url }}">{{ member.title }}</a>{% if member.nickname %}&nbsp;<small><em>{{ member.nickname }}</em></small>{% endif %}{% if member.active %}&nbsp;<i class="fa fa-check-circle text-success" title="active member" data-toggle="tooltip" data-placement="right"></i>{% else %}&nbsp;<i class="fa fa-minus-circle text-danger" title="inactive member" data-toggle="tooltip" data-placement="right"></i>{% endif %}</h2>
+      <h2><a href="{{ member.url }}">{{ member.title }}</a>{% if member.nickname %}&nbsp;<small><em>{{ member.nickname }}</em></small>{% endif %}
+
+      <!-- {% if member.active %}&nbsp;<i class="fa fa-check-circle text-success" title="active member" data-toggle="tooltip" data-placement="right"></i>{% else %}&nbsp;<i class="fa fa-minus-circle text-danger" title="inactive member" data-toggle="tooltip" data-placement="right"></i>{% endif %} -->
+
+      </h2>
       {% if member.co-owner %}<p class="label label-success">Co-Owner</p>{% endif %}
       {% if member.role %}<p class="lead member-role"><strong>{{ member.role }}</strong></p>{% endif %}
       {% if member.ragbrai %}<p class="member-ragbrai text-muted small"><em>Member since {{ member.ragbrai }}</em></p>{% endif %}

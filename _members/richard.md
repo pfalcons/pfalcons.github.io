@@ -4,7 +4,7 @@ short_name: richard
 nickname: Frodo
 role: Team Sticker Applicator / Jailbird
 ragbrai: 2009
-active: true
+active: false
 image: richard.jpg
 ---
 a.k.a. “Fro”, a.k.a. “$300”, a.k.a. “asphalt breakdancer”, a.k.a. “kitty-kat”

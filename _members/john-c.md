@@ -1,6 +1,6 @@
 ---
 title: John
 short_name: john-c
-active: true
+active: false
 ragbrai: 2014
 ---

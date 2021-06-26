@@ -2,6 +2,7 @@
 title: 'Gallery: The Bus Quotes'
 tags: gallery quotes bus
 comments: true
+published: false
 image_url: https://dl.dropboxusercontent.com/s/srws3yybn82g7ry/2013-04-13%2010-30-44.jpg
 ---
 Before saying goodbye to the bus, great effort was made to salvage as much as possible. That included taking photos of the bus roof where many quotes and sayings had been written by members and visitors aboard the bus.

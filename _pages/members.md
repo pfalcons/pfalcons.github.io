@@ -19,7 +19,7 @@ permalink: /members/
 {% endfor %}
 {% endfor %}
 
-{% comment %} Non-owner active members. {% endcomment %}
+<!-- {% comment %} Non-owner active members. {% endcomment %}
 <div class="lead text-muted"><em>Active Team</em></div>
 {% for group in group_members %}
 {% assign members = group.items | sort: 'title' %}
@@ -28,7 +28,7 @@ permalink: /members/
 	{% include member-teaser.html %}
 {% endif %}
 {% endfor %}
-{% endfor %}
+{% endfor %} -->
 
 {% comment %} Non-owner inactive members. {% endcomment %}
 <div class="lead text-muted"><em>Past Members</em></div>
@@ -44,6 +44,6 @@ permalink: /members/
 </div>
 <script type="text/javascript">
 $(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();   
+    $('[data-toggle="tooltip"]').tooltip();
 });
 </script>

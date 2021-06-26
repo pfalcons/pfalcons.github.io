@@ -14,7 +14,13 @@ layout: default-full
       <div class="ragbrai-header-content">
         <div class="left">
           {% if ragbrai_data['logo'] %}<img class="img-thumbnail ragbrai-logo" src="/assets/images/ragbrai/{{ ragbrai_data['logo'] }}" alt="{{ ragbrai_data['name'] }}" />{% endif %}
-          <h1>RAGBRAI {{ page.title }} <small><em>{{ ragbrai_data['name'] }}</em></small></h1>
+          <h1>
+          {% if page.title contains "-1" %}
+            {{ page.title | remove_first: '-1' }}
+          {% else %}
+            RAGBRAI {{ page.title }}
+          {% endif %}
+            <small><em>{{ ragbrai_data['name'] }}</em></small></h1>
         </div>
         <div class="right">
           <div class="row">
@@ -35,6 +41,7 @@ layout: default-full
             </div>
             {% endif %}
           </div>
+          {% if ragbrai_data['towns'] != empty %}
           <div class="row">
             <div class="ragbrai-towns">
               <p><small>
@@ -44,6 +51,7 @@ layout: default-full
               </small></p>
             </div>
           </div>
+          {% endif %}
           {% if ragbrai_data['gallery_url'] %}
           <div class="row row-centered">
             <div class="col-md-4 col-centered gallery">

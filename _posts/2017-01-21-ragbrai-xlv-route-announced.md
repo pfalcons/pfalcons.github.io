@@ -2,6 +2,7 @@
 title:  '2017 RAGBRAI XLV Route Announced!'
 tags: route
 comments: true
+published: false
 ragbrai: 2017
 ---
 {% assign ragbrai_data = site.data.ragbrai['2017'] %}

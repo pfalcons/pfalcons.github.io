@@ -2,6 +2,6 @@
 title: Erica's Boss
 short_name: eboss
 nickname: The BOSS
-active: true
+active: false
 ragbrai: 2019
 ---

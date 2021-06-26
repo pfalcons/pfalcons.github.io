@@ -3,6 +3,7 @@ title: Amanda
 short_name: amanda
 nickname: gots a Smoothie!
 ragbrai: 2010
+active: false
 image: amanda.jpg
 ---
 <audio controls>
