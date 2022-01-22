@@ -30,4 +30,19 @@ Another piece of data is the quotes file. There is a Google Form to collect it, 
 
 I stopped trying to keep up with the active/inactive roster stuff. The toggle still exists but everyone is a past member except for the co-owners.
 
+## Editing on Github
+
+This has gotten a lot easier over the years. Create an account and I can give you editing access. You can do most things through the website now.
+
+[https://github.com/pfalcons/pfalcons.github.io](https://github.com/pfalcons/pfalcons.github.io "https://github.com/pfalcons/pfalcons.github.io")
+
+### Opening the web-based editor
+
+You can open any GitHub repository in the web-based editor in either of the following ways:
+
+* Press `.` while browsing any repository or pull request on GitHub.
+* Change the URL from "github.com" to "github.dev".
+
+You can commit directly to the "master" branch and it will deploy to forestry.io and the live URL.
+
 **_Psst. Keep this file as a draft so it doesn't go "public" for the whole world to read._**
