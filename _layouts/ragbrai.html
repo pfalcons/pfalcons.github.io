@@ -25,7 +25,7 @@ layout: default-full
         <div class="right">
           <div class="row">
             {% if ragbrai_data['mileage'] %}
-            <div class="col-md-6 stat mileage">
+            <div class="col-6 stat mileage">
               <span class="count_top"><i class="fa fa-road" aria-hidden="true"></i> Mileage</span>
               <div class="count">
                 {{ ragbrai_data['mileage'] }} <span class="count-suffix"><small>mi.</small></span>
@@ -33,7 +33,7 @@ layout: default-full
             </div>
             {% endif %}
             {% if ragbrai_data['climb'] %}
-            <div class="col-md-6 stat climb">
+            <div class="col-6 stat climb">
               <span class="count_top"><i class="fa fa-area-chart" aria-hidden="true"></i> Climb</span>
               <div class="count">
                 {{ ragbrai_data['climb'] }} <span class="count-suffix"><small>ft.</small></span>
@@ -54,7 +54,7 @@ layout: default-full
           {% endif %}
           {% if ragbrai_data['gallery_url'] %}
           <div class="row row-centered">
-            <div class="col-md-4 col-centered gallery">
+            <div class="col-4 col-centered gallery">
               <a href="{{ ragbrai_data['gallery_url'] }}" class="btn btn-success btn-lg btn-block">View Media Gallery</a>
             </div>
           </div>
@@ -71,7 +71,7 @@ layout: default-full
       <h2>New Team Members</h2>
       <div class="ragbrai-members-content row row-centered">
         {% for member in members %}
-          <div class="col-md-3 col-centered member">
+          <div class="col-3 col-centered member">
             <a href="{{ member.url }}">
               <div class="img-crop-circle">
                 <img src="/assets/images/members/{{ member.image }}">
@@ -110,7 +110,7 @@ layout: default-full
       {% assign quotes = group.items %}
       <div class="row">
       {% for quote in quotes reversed %}
-        <div class="col-md-4 quote">
+        <div class="col-4 quote">
           <blockquote>{{ quote.quote }}
           {% assign member = site.members | where:"short_name", quote.member | first %}
           {% if member or quote.year %}
@@ -132,7 +132,7 @@ layout: default-full
       </div>
     </div>
     <div class="row row-centered">
-			<div class="col-md-6 col-centered">
+			<div class="col-6 col-centered">
 				<small><p><a href="https://goo.gl/forms/WeYaOwYCSfM2qXsD2" target="_blank" class="btn btn-danger btn-block">Submit a quote</a></p></small>
 			</div>
 		</div>
