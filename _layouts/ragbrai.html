@@ -12,7 +12,7 @@ layout: default-full
   <div class="container-wrapper ragbrai-header">
     <div class="container">
       <div class="ragbrai-header-content">
-        <div class="left">
+        <div class="col-3">
           {% if ragbrai_data['logo'] %}<img class="img-thumbnail ragbrai-logo" src="/assets/images/ragbrai/{{ ragbrai_data['logo'] }}" alt="{{ ragbrai_data['name'] }}" />{% endif %}
           <h1>
           {% if page.title contains "-1" %}
@@ -22,7 +22,7 @@ layout: default-full
           {% endif %}
             <small><em>{{ ragbrai_data['name'] }}</em></small></h1>
         </div>
-        <div class="right">
+        <div class="col-9">
           <div class="row">
             {% if ragbrai_data['mileage'] %}
             <div class="col-6 stat mileage">
@@ -43,7 +43,7 @@ layout: default-full
           </div>
           {% if ragbrai_data['towns'] != empty %}
           <div class="row">
-            <div class="ragbrai-towns">
+            <div class="col ragbrai-towns">
               <p><small>
                 {% for town in ragbrai_data['towns'] %}
                   {{ town }}{% if forloop.last == false %} <span aria-hidden="true">&rarr;</span> {% endif %}
@@ -53,8 +53,8 @@ layout: default-full
           </div>
           {% endif %}
           {% if ragbrai_data['gallery_url'] %}
-          <div class="row row-centered">
-            <div class="col-4 col-centered gallery">
+          <div class="row justify-content-md-center">
+            <div class="col-4 gallery">
               <a href="{{ ragbrai_data['gallery_url'] }}" class="btn btn-success btn-lg btn-block">View Media Gallery</a>
             </div>
           </div>
@@ -69,9 +69,9 @@ layout: default-full
   <div class="container-wrapper ragbrai-members">
     <div class="container">
       <h2>New Team Members</h2>
-      <div class="ragbrai-members-content row row-centered">
+      <div class="ragbrai-members-content row justify-content-md-center">
         {% for member in members %}
-          <div class="col-3 col-centered member">
+          <div class="col-3 member">
             <a href="{{ member.url }}">
               <div class="img-crop-circle">
                 <img src="/assets/images/members/{{ member.image }}">
@@ -131,8 +131,8 @@ layout: default-full
       {% endfor %}
       </div>
     </div>
-    <div class="row row-centered">
-			<div class="col-6 col-centered">
+    <div class="row justify-content-md-center">
+			<div class="col-6">
 				<small><p><a href="https://goo.gl/forms/WeYaOwYCSfM2qXsD2" target="_blank" class="btn btn-danger btn-block">Submit a quote</a></p></small>
 			</div>
 		</div>
