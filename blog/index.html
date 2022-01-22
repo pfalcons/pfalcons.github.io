@@ -7,12 +7,12 @@ title: Blog
   <div class="post-teaser clearfix">
     <div class="row">
       {% if post.image_url %}
-      <div class="col-5">
+      <div class="col-md-5">
         <p><img class="img-thumbnail post-image" src="{{ post.image_url }}" alt="{{ post.title }}" /></p>
       </div>
-      <div class="col-7">
+      <div class="col-md-7">
       {% else %}
-      <div class="col-12">
+      <div class="col-md-12">
       {% endif %}
         <h2 class="post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
         <div class="post-date">{{ post.date | date_to_string }}</div>

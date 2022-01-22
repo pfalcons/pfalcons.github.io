@@ -12,7 +12,7 @@ layout: default-full
   <div class="container-wrapper ragbrai-header">
     <div class="container">
       <div class="ragbrai-header-content">
-        <div class="col-3">
+        <div class="col-md-3">
           {% if ragbrai_data['logo'] %}<img class="img-thumbnail ragbrai-logo" src="/assets/images/ragbrai/{{ ragbrai_data['logo'] }}" alt="{{ ragbrai_data['name'] }}" />{% endif %}
           <h1>
           {% if page.title contains "-1" %}
@@ -22,10 +22,10 @@ layout: default-full
           {% endif %}
             <small><em>{{ ragbrai_data['name'] }}</em></small></h1>
         </div>
-        <div class="col-9">
+        <div class="col-md-9">
           <div class="row">
             {% if ragbrai_data['mileage'] %}
-            <div class="col-6 stat mileage">
+            <div class="col-md-6 stat mileage">
               <span class="count_top"><i class="fa fa-road" aria-hidden="true"></i> Mileage</span>
               <div class="count">
                 {{ ragbrai_data['mileage'] }} <span class="count-suffix"><small>mi.</small></span>
@@ -33,7 +33,7 @@ layout: default-full
             </div>
             {% endif %}
             {% if ragbrai_data['climb'] %}
-            <div class="col-6 stat climb">
+            <div class="col-md-6 stat climb">
               <span class="count_top"><i class="fa fa-area-chart" aria-hidden="true"></i> Climb</span>
               <div class="count">
                 {{ ragbrai_data['climb'] }} <span class="count-suffix"><small>ft.</small></span>
@@ -54,7 +54,7 @@ layout: default-full
           {% endif %}
           {% if ragbrai_data['gallery_url'] %}
           <div class="row justify-content-md-center">
-            <div class="col-4 gallery">
+            <div class="col-md-4 gallery">
               <a href="{{ ragbrai_data['gallery_url'] }}" class="btn btn-success btn-lg btn-block">View Media Gallery</a>
             </div>
           </div>
@@ -71,7 +71,7 @@ layout: default-full
       <h2>New Team Members</h2>
       <div class="ragbrai-members-content row justify-content-md-center">
         {% for member in members %}
-          <div class="col-3 member">
+          <div class="col-md-3 member">
             <a href="{{ member.url }}">
               <div class="img-crop-circle">
                 <img src="/assets/images/members/{{ member.image }}">
@@ -110,7 +110,7 @@ layout: default-full
       {% assign quotes = group.items %}
       <div class="row">
       {% for quote in quotes reversed %}
-        <div class="col-4 quote">
+        <div class="col-md-4 quote">
           <blockquote>{{ quote.quote }}
           {% assign member = site.members | where:"short_name", quote.member | first %}
           {% if member or quote.year %}
@@ -132,7 +132,7 @@ layout: default-full
       </div>
     </div>
     <div class="row justify-content-md-center">
-			<div class="col-6">
+			<div class="col-md-6">
 				<small><p><a href="https://goo.gl/forms/WeYaOwYCSfM2qXsD2" target="_blank" class="btn btn-danger btn-block">Submit a quote</a></p></small>
 			</div>
 		</div>
