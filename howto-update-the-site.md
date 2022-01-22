@@ -26,4 +26,8 @@ First head into RAGBRAI Data and find the upcoming year you want to update. Hope
 
 Another piece of data is the quotes file. There is a Google Form to collect it, but then massaged (connect to member short names) and uploaded to GitHub as a .csv.
 
+## Members
+
+I stopped trying to keep up with the active/inactive roster stuff. The toggle still exists but everyone is a past member except for the co-owners.
+
 **_Psst. Keep this file as a draft so it doesn't go "public" for the whole world to read._**
