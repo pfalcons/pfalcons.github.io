@@ -3,7 +3,7 @@
   name: I
   mileage: "442.7"
   climb: "17869"
-  logo:
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r1.kmz
   towns:
   - Sioux City
@@ -18,7 +18,7 @@
   name: II
   mileage: "427.7"
   climb: "20687"
-  logo:
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r2.kmz
   towns:
   - Council Bluffs
@@ -33,7 +33,7 @@
   name: III
   mileage: "464.3"
   climb: "16994"
-  logo:
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r3.kmz
   towns:
   - Hawarden
@@ -48,7 +48,7 @@
   name: IV
   mileage: "445.2"
   climb: "19595"
-  logo:
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r4.kmz
   towns:
   - Sidney
@@ -63,7 +63,7 @@
   name: V
   mileage: "379.2"
   climb: "10675"
-  logo:
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r5.kmz
   towns:
   - Onawa
@@ -78,7 +78,7 @@
   name: VI
   mileage: "450"
   climb: "16462"
-  logo:
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r6.kmz
   towns:
   - Sioux City
@@ -93,7 +93,7 @@
   name: VII
   mileage: "505.8"
   climb: "15187"
-  logo:
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r7.kmz
   towns:
   - Rock Rapids
@@ -108,7 +108,7 @@
   name: VIII
   mileage: "483.8"
   climb: "22579"
-  logo:
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r8.kmz
   towns:
   - Glenwood
@@ -123,7 +123,7 @@
   name: IX
   mileage: "505.1"
   climb: "26374"
-  logo:
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r9.kmz
   towns:
   - Missouri Valley
@@ -138,7 +138,7 @@
   name: X
   mileage: "517.1"
   climb: "16357"
-  logo:
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r10.kmz
   towns:
   - Akron
@@ -153,7 +153,7 @@
   name: XI
   mileage: "488.5"
   climb: "19791"
-  logo:
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r11.kmz
   towns:
   - Onawa
@@ -168,7 +168,7 @@
   name: XII
   mileage: "471.7"
   climb: "21709"
-  logo:
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r12.kmz
   towns:
   - Glenwood
@@ -183,7 +183,7 @@
   name: XIII
   mileage: "550.1"
   climb: "15648"
-  logo:
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r13.kmz
   towns:
   - Hawarden
@@ -198,7 +198,7 @@
   name: XIV
   mileage: "495.4"
   climb: "22424"
-  logo:
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r14.kmz
   towns:
   - Council Bluffs
@@ -213,7 +213,7 @@
   name: XV
   mileage: "450.5"
   climb: "15611"
-  logo:
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r15.kmz
   towns:
   - Onawa
@@ -228,7 +228,7 @@
   name: XVI
   mileage: "434.1"
   climb: "18304"
-  logo:
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r16.kmz
   towns:
   - Sioux City
@@ -243,7 +243,7 @@
   name: XVII
   mileage: "488.9"
   climb: "21855"
-  logo:
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r17.kmz
   towns:
   - Glenwood
@@ -258,7 +258,7 @@
   name: XVIII
   mileage: "496"
   climb: "13344"
-  logo:
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r18.kmz
   towns:
   - Sioux Center
@@ -273,7 +273,7 @@
   name: XIX
   mileage: "427.8"
   climb: "23162"
-  logo:
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r19.kmz
   towns:
   - Missouri Valley
@@ -288,7 +288,7 @@
   name: XX
   mileage: "488.3"
   climb: "24716"
-  logo:
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r20.kmz
   towns:
   - Glenwood
@@ -303,7 +303,7 @@
   name: XXI
   mileage: "536"
   climb: "18280"
-  logo:
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r21.kmz
   towns:
   - Sioux City
@@ -318,7 +318,7 @@
   name: XXII
   mileage: "507.2"
   climb: "23260"
-  logo:
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r22.kmz
   towns:
   - Council Bluffs
@@ -333,7 +333,7 @@
   name: XXIII
   mileage: "481.1"
   climb: "18003"
-  logo:
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r23.kmz
   towns:
   - Onawa
@@ -348,7 +348,7 @@
   name: XXIV
   mileage: "428.7"
   climb: "14299"
-  logo:
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r24.kmz
   towns:
   - Sioux Center
@@ -363,7 +363,7 @@
   name: XXV
   mileage: "459.2"
   climb: "25369"
-  logo:
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r25.kmz
   towns:
   - Missouri Valley
@@ -378,7 +378,7 @@
   name: XXVI
   mileage: "479.4"
   climb: "18495"
-  logo:
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r26.kmz
   towns:
   - Hawarden
@@ -393,7 +393,7 @@
   name: XXVII
   mileage: "520"
   climb: "18318"
-  logo:
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r27.kmz
   towns:
   - Rock Rapids
@@ -408,7 +408,7 @@
   name: XXVIII
   mileage: "488.9"
   climb: "22885"
-  logo:
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r28.kmz
   towns:
   - Council Bluffs
@@ -423,7 +423,7 @@
   name: XXIX
   mileage: "517"
   climb: "25543"
-  logo:
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r29.kmz
   towns:
   - Sioux City
@@ -438,7 +438,7 @@
   name: XXX
   mileage: "487.7"
   climb: "15656"
-  logo:
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r30.kmz
   towns:
   - Sioux Center
@@ -453,7 +453,7 @@
   name: XXXI
   mileage: "443.6"
   climb: "23149"
-  logo:
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r31.kmz
   towns:
   - Glenwood
@@ -468,7 +468,7 @@
   name: XXXII
   mileage: "486.8"
   climb: "18425"
-  logo:
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r32.kmz
   towns:
   - Onawa
@@ -483,7 +483,7 @@
   name: XXXIII
   mileage: "484.4"
   climb: "15294"
-  logo:
+  logo: 
   map: http://www.geobike.com/geobike/RAGBRAI/r33.kmz
   towns:
   - Le Mars
@@ -691,7 +691,7 @@
   mileage: "428.1"
   climb: "12576"
   logo: 2018.png
-  map:
+  map: 
   gallery_url: https://photos.app.goo.gl/ySKsFK3M2gvatkQR8
   towns:
   - Onawa
@@ -707,8 +707,8 @@
   mileage: "427"
   climb: "14735"
   logo: 2019.jpg
-  map:
-  gallery_url:
+  map: 
+  gallery_url: 
   towns:
   - Council Bluffs
   - Atlantic
@@ -723,8 +723,8 @@
   mileage: "420.3"
   climb: '12,306'
   logo: 2020.png
-  map:
-  gallery_url:
+  map: 
+  gallery_url: 
   towns:
   - Le Mars
   - Storm Lake
@@ -734,21 +734,13 @@
   - Anamosa
   - Maquoketa
   - Clinton
-'2020-1':
-  name: "Katy Trail"
-  mileage:
-  climb:
-  logo: 2020-1.jpg
-  map:
-  gallery_url:
-  towns:
 '2021':
   name: XLVIII
   mileage: "454.1"
   climb: '11,954'
   logo: 2021.png
-  map:
-  gallery_url:
+  map: 
+  gallery_url: 
   towns:
   - Le Mars
   - Sac City
@@ -759,18 +751,26 @@
   - DeWitt
   - Clinton
 '2022':
-  name:
-  mileage:
-  climb:
-  logo:
-  map:
-  gallery_url:
+  name: XLIX
+  mileage: 
+  climb: 
+  logo: 
+  map: 
+  gallery_url: 
   towns:
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+2020-1:
+  name: Katy Trail
+  mileage: 
+  climb: 
+  logo: 2020-1.jpg
+  map: 
+  gallery_url: 
+  towns: 
