@@ -8,13 +8,17 @@ Let me guess, was the RAGBRAI route was just announced? It is too cold outside t
 
 Most content is pretty straightforward once you get into the backend at forestry.io, but there is some site content that was just too custom for forestry to handle. Let's walk through it.
 
-## The Homepage/Sidebar
+## Homepage
 
-It is all hard-coded baby! The body content, the sidebar (include twitter widget and countdown). Sorry, GitHub/Git for this for now.
+This is "Welcome!" in the pages section of Forestry.
+
+## Sidebar
+
+It is all hard-coded baby! Includes twitter widget and countdown. Sorry, GitHub/Git for this for now.
 
 ## RAGBRAI/RAGBRAI Data
 
-Scour the RAGBRAI.com website for the logo and save it to the site via Media with the year as the filename (e.g. 2006).
+Scour the RAGBRAI.com website for the logo and save it to the site via Media with the year as the filename (e.g. 2006.png).
 
 First head into RAGBRAI Data and find the upcoming year you want to update. Hopefully the data file has a few blank entries for years to come, otherwise you will have to find a non-forestry way (GitHub) of adding a year to the file. Enter all the details that the RAGBRAI announcement party gave you for now. This new data won't show anywhere however unless you create a RAGBRAI "page" with the same name (e.g. 2006). The image assumes it lives at /assets/images/ragbrai... so Forestry's Media won't probably upload it to the correct directory unless you are a hackerman.
 
