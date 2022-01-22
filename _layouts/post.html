@@ -8,7 +8,7 @@ is_post: true
   {% if page.tags %}
   <ul class="list-inline">
   {% for tag in page.tags %}
-    <li><a href="/archive/tags/#{{ tag | slugify }}" class="label label-default"><i class="fa fa-tag" aria-hidden="true"></i> {{ tag }}</a></li>
+    <li><a href="/archive/tags/#{{ tag | slugify }}" class="badge badge-light"><i class="fa fa-tag" aria-hidden="true"></i> {{ tag }}</a></li>
   {% endfor %}
   </ul>
   {% endif %}

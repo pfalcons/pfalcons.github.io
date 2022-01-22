@@ -9,7 +9,7 @@
       <!-- {% if member.active %}&nbsp;<i class="fa fa-check-circle text-success" title="active member" data-toggle="tooltip" data-placement="right"></i>{% else %}&nbsp;<i class="fa fa-minus-circle text-danger" title="inactive member" data-toggle="tooltip" data-placement="right"></i>{% endif %} -->
 
       </h2>
-      {% if member.co-owner %}<p class="label label-success">Co-Owner</p>{% endif %}
+      {% if member.co-owner %}<p class="badge badge-success">Co-Owner</p>{% endif %}
       {% if member.role %}<p class="lead member-role"><strong>{{ member.role }}</strong></p>{% endif %}
       {% if member.ragbrai %}<p class="member-ragbrai text-muted small"><em>Member since {{ member.ragbrai }}</em></p>{% endif %}
     </div>
