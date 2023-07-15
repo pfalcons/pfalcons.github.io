@@ -10,7 +10,7 @@ permalink: /quotes/
 	{% assign group_quotes = site.data.quotes | group_by: 'ragbrai' | sort: 'name' %}
 		<h1>{{ page.title }}</h1>
 		<div class="row row-centered">
-			<div class="col-md-6 col-md-centered">
+			<div class="col-md-6 mx-auto d-block">
 				<small><p><a href="https://goo.gl/forms/WeYaOwYCSfM2qXsD2" target="_blank" class="btn btn-danger btn-block">Submit a quote</a></p></small>
 			</div>
 		</div>
@@ -38,7 +38,7 @@ permalink: /quotes/
 		</div>
 	{% endfor %}
 	<div class="row row-centered">
-		<div class="col-md-6 col-md-centered">
+		<div class="col-md-6 mx-auto d-block">
 			<small><p><a href="https://goo.gl/forms/WeYaOwYCSfM2qXsD2" target="_blank" class="btn btn-danger btn-block">Submit a quote</a></p></small>
 		</div>
 	</div>

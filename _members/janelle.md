@@ -1,7 +1,7 @@
 ---
 title: Janelle
 short_name: janelle
-active: false
+active: true
 image: janelle.jpg
 ragbrai: 2017
 ---

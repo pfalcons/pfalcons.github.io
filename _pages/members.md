@@ -9,7 +9,7 @@ permalink: /members/
 {% assign group_members = site.members | group_by: 'ragbrai' | sort: 'name' %}
 
 {% comment %} Owners {% endcomment %}
-<div class="lead text-muted"><em>Owners</em></div>
+<h2>Owners</h2>
 {% for group in group_members %}
 {% assign members = group.items | sort: 'weight' %}
 {% for member in members %}
@@ -19,19 +19,34 @@ permalink: /members/
 {% endfor %}
 {% endfor %}
 
-<!-- {% comment %} Non-owner active members. {% endcomment %}
-<div class="lead text-muted"><em>Active Team</em></div>
+{% comment %} Non-owner active members. {% endcomment %}
+<h2>Driver</h2>
 {% for group in group_members %}
 {% assign members = group.items | sort: 'title' %}
 {% for member in members %}
 {% if member.co-owner != true and member.active %}
+{% if member.driver %}
 	{% include member-teaser.html %}
 {% endif %}
+{% endif %}
 {% endfor %}
-{% endfor %} -->
+{% endfor %}
+
+{% comment %} Non-owner active members. {% endcomment %}
+<h2>Active Team</h2>
+{% for group in group_members %}
+{% assign members = group.items | sort: 'title' %}
+{% for member in members %}
+{% if member.co-owner != true and member.active %}
+{% if member.driver != true %}
+	{% include member-teaser.html %}
+{% endif %}
+{% endif %}
+{% endfor %}
+{% endfor %}
 
 {% comment %} Non-owner inactive members. {% endcomment %}
-<div class="lead text-muted"><em>Past Members</em></div>
+<h2>Past Members</h2>
 {% for group in group_members %}
 {% assign members = group.items | sort: 'title' %}
 {% for member in members %}

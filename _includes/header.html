@@ -6,7 +6,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li role="presentation" {% if page.url contains '/blog/' %}class="nav-item"{% endif %}><a class="nav-link" href="/blog/">Blog</a></li>
+        <!-- <li role="presentation" {% if page.url contains '/blog/' %}class="nav-item"{% endif %}><a class="nav-link" href="/blog/">Blog</a></li> -->
           {% assign pages_list = site.pages | sort:"weight"  %}
           {% for node in pages_list %}
             {% if node.title != null %}

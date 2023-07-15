@@ -5,6 +5,12 @@
 
 The official website of the Perineum Falcons.
 
+## Setup
+
+Github Codespaces
+`rvm install 2.7.8`
+`docker compose up`
+
 ## Author
  **Joe Whitsitt**
 - <https://github.com/joewhitsitt>

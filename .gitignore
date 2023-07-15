@@ -3,3 +3,4 @@ _site
 .sass-cache
 .jekyll-metadata
 assets/images/members/john-c.jpg
+.jekyll-cache

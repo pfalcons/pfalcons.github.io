@@ -35,13 +35,17 @@
             <a href="/{{ page.collection }}" class="btn btn-danger btn-block"><span aria-hidden="true">&larr;</span> View all {{ page.collection }}</a>
           </section>
         {% endif %}
-        <!-- <section>
+        <section>
           <h2>Countdown to RAGBRAI</h2>
           <div class="text-danger small" id="ragbrai-countdown"></div>
-        </section> -->
-        <section>
-          <a class="twitter-timeline" data-height="600" data-dnt="true" data-theme="dark" data-link-color="#E81C4F" href="https://twitter.com/pfalcons?ref_src=twsrc%5Etfw">Tweets by pfalcons</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </section>
+        {% if site.twitter %}
+        <section>
+          <a href="https://twitter.com/{{ site.twitter }}">
+            <i class="fa fa-twitter" aria-hidden="true"></i> Follow us on Twitter
+          </a>
+        </section>
+        {% endif %}
       </aside>
     </div><!-- /.row -->
   </div><!-- /.container -->
