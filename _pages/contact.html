@@ -5,7 +5,16 @@ weight: 6
 icon: fa-envelope
 permalink: /contact/
 ---
-<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+<style>
+  #g-recaptcha-response {
+display: block !important;
+position: absolute;
+margin: -50px 0 0 0 !important;
+z-index: -999999;
+opacity: 0;
+}
+</style>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <form id="contact-form" action="https://formspree.io/f/xdoynwyr" method="POST">
   <div class="form-group">
     <label for="email">Email:</label>
@@ -15,12 +24,19 @@ permalink: /contact/
     <label for="mesage">Message:</label>
     <textarea class="form-control" id="message" name="message" rows="3"></textarea>
   </div>
-  <div class="h-captcha" data-sitekey="a2ffc472-dd50-4f4d-ae39-19362c425ce3"></div>
+  <div class="g-recaptcha" data-sitekey="6LdbB7saAAAAAL-GBixb4jBrrZ-XcLILpn2IboWy"></div> 
   <button id="contact-form-button" type="submit" class="btn btn-primary">Submit</button>
   <p id="contact-form-status"></p>
 </form>
 
 <script>
+
+  window.onload = function() { 
+  var el = document.getElementById('g-recaptcha-response'); 
+  if (el) { 
+    el.setAttribute('required', 'required'); 
+  } 
+}
     var form = document.getElementById("contact-form");
 
     async function handleSubmit(event) {
