@@ -782,6 +782,22 @@
   - Tama-Toledo
   - Coralville
   - Davenport
+'2024':
+  name: LI
+  mileage: "424"
+  climb: '18,737'
+  logo: 2024.png
+  map: 
+  gallery_url: 
+  towns:
+  - Glenwood
+  - Red Oak
+  - Atlantic
+  - Winterset
+  - Knoxville
+  - Ottumwa
+  - Mt. Pleasant
+  - Burlington
 2020-1:
   name: Katy Trail
   mileage: 
