@@ -798,6 +798,22 @@
   - Ottumwa
   - Mt. Pleasant
   - Burlington
+'2025':
+  name: LII
+  mileage: "406"
+  climb: '10,487'
+  logo: 2025.png
+  map: 
+  gallery_url: 
+  towns:
+  - Orange City
+  - Milford
+  - Estherville
+  - Forest City
+  - Iowa Falls
+  - Cedar Falls
+  - Oelwein
+  - Guttenberg
 2020-1:
   name: Katy Trail
   mileage: 

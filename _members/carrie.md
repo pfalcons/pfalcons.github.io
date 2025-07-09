@@ -1,7 +1,7 @@
 ---
 title: Carrie
 short_name: carrie
-active: true
+active: false
 ragbrai: 2015
 image: carrie.jpg
 ---
