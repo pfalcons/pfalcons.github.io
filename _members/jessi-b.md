@@ -1,6 +1,6 @@
 ---
 title: Jessi
 short_name: jessi
-ragbrai: 2023
+ragbrai: 2024
 active: true
 ---
