@@ -2,7 +2,6 @@
 layout: page
 title: About
 weight: 0
-icon: fa-group
 permalink: /about/
 ---
 Many years ago on Ragbrai, when just Tim O’Brien and I would embark on the journey, I sagged with a disheveled and dirty, but rowdy and fun bunch of guys and girls on a miniature bus slapdashedly painted yellow and red. They were known to the Iowa underground drinker/biker community as “Fat Tom’s Army” (FTA).
