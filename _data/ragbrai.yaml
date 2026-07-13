@@ -814,6 +814,22 @@
   - Cedar Falls
   - Oelwein
   - Guttenberg
+'2026':
+  name: LIII
+  mileage: "391"
+  climb: '16,027'
+  logo: 2026.png
+  map: 
+  gallery_url: 
+  towns:
+  - Onawa
+  - Harlan
+  - Guthrie Center
+  - Boone
+  - Marshalltown
+  - Independence
+  - Dyersville
+  - Dubuque
 2020-1:
   name: Katy Trail
   mileage: 
