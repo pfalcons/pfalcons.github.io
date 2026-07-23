@@ -1,0 +1,57 @@
+---
+title: Contact
+---
+
+<style>
+  #g-recaptcha-response {
+display: block !important;
+position: absolute;
+margin: -50px 0 0 0 !important;
+z-index: -999999;
+opacity: 0;
+}
+</style>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<form id="contact-form" action="https://formspree.io/f/xdoynwyr" method="POST">
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" class="form-control" name="email" />
+  </div>
+  <div class="form-group">
+    <label for="mesage">Message:</label>
+    <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+  </div>
+  <div class="g-recaptcha" data-sitekey="6LdbB7saAAAAAL-GBixb4jBrrZ-XcLILpn2IboWy"></div> 
+  <button id="contact-form-button" type="submit" class="btn btn-primary">Submit</button>
+  <p id="contact-form-status"></p>
+</form>
+
+<script>
+
+  window.onload = function() { 
+  var el = document.getElementById('g-recaptcha-response'); 
+  if (el) { 
+    el.setAttribute('required', 'required'); 
+  }
+}
+    var form = document.getElementById("contact-form");
+
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("contact-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        status.innerHTML = "Thanks for your submission! We may or may not be in contact";
+        form.reset()
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form. Clearly email is not your thing. Find us on RAGBRAI instead."
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+</script>
