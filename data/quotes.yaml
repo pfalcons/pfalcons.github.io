@@ -1,20 +1,20 @@
 quotes:
 - id: 1
   text: If you're not drinking, you'd better be pregnant.
-  attribution: ME
+  attribution: MJ
   members:
   - mike
   year: 2008
 - id: 2
   text: I outsource my hair growing. Some kid I China does it for me. Shit! I should
     have picked Venezuela instead of a country where they can't grow eyebrows.
-  attribution: JY
+  attribution: JJ
   members:
   - jenny
   year: 2013
 - id: 3
   text: Fucking thunder warnings!
-  attribution: JY
+  attribution: JJ
   members:
   - jenny
   year: 2013
@@ -24,7 +24,7 @@ quotes:
     Jenny: well you gotta pass the time somehow.
 
     Frodo: they gotta pass out sometime.'
-  attribution: RD
+  attribution: Frodo
   members:
   - richard
   - jenny
@@ -33,20 +33,20 @@ quotes:
   text: 'Lois: Your balls are rubbing on the ceiling
 
     Chris: Thanks Lois'
-  attribution: LS
+  attribution: CB
   members:
   - lois
   - chris-wz
   year: 2014
 - id: 6
   text: Shit get out of here, you're under new management.
-  attribution: JY
+  attribution: JJ
   members:
   - jenny
   year: 2014
 - id: 7
   text: This team is all dick and vaj jokes
-  attribution: AA
+  attribution: AB
   members:
   - amanda
   year: 2015
@@ -61,7 +61,7 @@ quotes:
     to your room?"
 
     Later: "I refuse to eat your fudge until you come"'
-  attribution: ME
+  attribution: MJ
   members:
   - mike
   year: 2015
@@ -73,7 +73,7 @@ quotes:
   year: 2015
 - id: 11
   text: And all the pretty girls think he's pretty fly for a John ____.
-  attribution: CZ
+  attribution: CB
   members:
   - chris-wz
   year: 2015
@@ -87,7 +87,7 @@ quotes:
   text: 'Bar carder: you have a little powdered sugar on your chin.
 
     Jenny: thanks. We''ll just call it powdered sugar.'
-  attribution: JY
+  attribution: JJ
   members:
   - jenny
   year: 2015
@@ -95,20 +95,20 @@ quotes:
   text: 'Jenny: careful, it''s attached to my finger. Go slow.
 
     Chris: you''re vagina?'
-  attribution: CZ
+  attribution: CB
   members:
   - chris-wz
   - jenny
   year: 2015
 - id: 15
   text: Baseline rage
-  attribution: JY
+  attribution: JJ
   members:
   - jenny
   year: 2015
 - id: 16
   text: I feel like a bag of smashed assholes, I'm sure it will blow over soon.
-  attribution: ME
+  attribution: MJ
   members:
   - mike
   year: 2015
@@ -120,14 +120,14 @@ quotes:
   year: 2015
 - id: 18
   text: Amanda gots a smoothie!
-  attribution: JE
+  attribution: JW
   members:
   - joe
 - id: 19
   text: 'Mike: I''m going to put this pancake in my pocket.
 
     Abby: You can''t put that in your pocket, it''s got syrup on it!'
-  attribution: AY
+  attribution: AW
   members:
   - abby
   - mike
@@ -138,7 +138,7 @@ quotes:
   - marc
 - id: 21
   text: Mike James, you're going to die alone. You know that right?
-  attribution: JY
+  attribution: JJ
   members:
   - jenny
 - id: 22
@@ -162,24 +162,24 @@ quotes:
   - marc
 - id: 25
   text: Don't touch that frog, it might be electric!
-  attribution: AY
+  attribution: AW
   members:
   - abby
 - id: 26
   text: That naked guy looks like he has a black cashmere sweater wrapped around his
     waste.
-  attribution: RD
+  attribution: Frodo
   members:
   - richard
 - id: 27
   text: Quit muff divin' the cheese puffs
-  attribution: JY
+  attribution: JJ
   members:
   - jenny
 - id: 28
   text: 'Dede: I''m not sure we should let the drunk girls go in [Walmart]. Jenny:
     ABBY!  RUN!'
-  attribution: JY
+  attribution: JJ
   members:
   - jenny
   year: 2008
@@ -191,7 +191,7 @@ quotes:
   year: 2008
 - id: 30
   text: They can't even speak American!
-  attribution: JN
+  attribution: Petey
   members:
   - jon
   year: 2008
@@ -215,7 +215,7 @@ quotes:
   - dave
 - id: 34
   text: Peeing the bed is never a situation to be proud of.
-  attribution: ME
+  attribution: MJ
   members:
   - mike
 - id: 35
@@ -233,13 +233,13 @@ quotes:
 - id: 36
   text: If it weren't for the fact that the ground hurts, I would be barefoot for
     like my entire life.
-  attribution: JY
+  attribution: JJ
   members:
   - jenny
   year: 2007
 - id: 37
   text: College guy? More like College GAY!
-  attribution: JY
+  attribution: JJ
   members:
   - jenny
 - id: 38
@@ -271,7 +271,7 @@ quotes:
     Annie: 5-5.5 miles.
 
     Amanda: Mmmm, I''ve already committed to quitting.'
-  attribution: AA
+  attribution: AB
   members:
   - amanda
   - annie
@@ -288,7 +288,7 @@ quotes:
   - anon
 - id: 45
   text: I feel like murdering shit
-  attribution: ME
+  attribution: MJ
   members:
   - mike
   year: 2010
@@ -299,20 +299,20 @@ quotes:
   - anon
 - id: 47
   text: 'Mike James murderer of: pickles, beer, Jen''s vag, shit'
-  attribution: ME
+  attribution: MJ
   members:
   - mike
   year: 2010
 - id: 48
   text: Apparently I am only supposed to have one penis in me at a time.
-  attribution: JY
+  attribution: JJ
   members:
   - jenny
 - id: 49
   text: 'Jenny: You know Issac is a virgin. We should write on him.
 
     Annie: Is he religious?'
-  attribution: AE
+  attribution: JJ
   members:
   - annie
   - jenny
@@ -338,7 +338,7 @@ quotes:
   text: 'Amanda, are you riding today?
 
     Amanda: Naw, I gave up riding early in the week.'
-  attribution: AA
+  attribution: AB
   members:
   - amanda
   year: 2010
@@ -355,14 +355,14 @@ quotes:
   - anon
 - id: 56
   text: That's what this team does. It makes you give up caring.
-  attribution: ME
+  attribution: MJ
   members:
   - mike
   year: 2010
 - id: 57
   text: When I get home, I'm going to take a shower, take a bath, then shower again.
     Then I will go to the other bathroom and do it all over again.
-  attribution: AY
+  attribution: AW
   members:
   - abby
   year: 2010
@@ -375,7 +375,7 @@ quotes:
   text: 'Abby: Are you having fun?
 
     Jenny: Yes! I love to color!'
-  attribution: JY
+  attribution: JJ
   members:
   - jenny
   - abby
@@ -404,13 +404,13 @@ quotes:
   year: 2010
 - id: 64
   text: Talk to Mike James, he is the stuffing magician
-  attribution: JY
+  attribution: JJ
   members:
   - jenny
   year: 2006
 - id: 65
   text: Shut up Amanda!
-  attribution: JE
+  attribution: JW
   members:
   - joe
   year: 2010
@@ -424,7 +424,7 @@ quotes:
 - id: 67
   text: I've never understood the term "blowjob." Isn't it more of a suckle and a
     lickle?
-  attribution: JE
+  attribution: JW
   members:
   - joe
 - id: 68
@@ -435,7 +435,7 @@ quotes:
   - anon
 - id: 69
   text: Hey manda, come eat this shit. Where are you?!
-  attribution: JY
+  attribution: JJ
   members:
   - jenny
 - id: 70
@@ -448,7 +448,7 @@ quotes:
   text: 'Justin: I wasn''t even an itch in my dad''s pants.
 
     Jenny: You''ve always been an itch in your dad''s pants.'
-  attribution: JY
+  attribution: JJ
   members:
   - jenny
   - justin
@@ -459,7 +459,7 @@ quotes:
     Erica: Where is Petey?
 
     Mike: He melted.'
-  attribution: ME
+  attribution: MJ
   members:
   - mike
   - erica
@@ -470,14 +470,14 @@ quotes:
 
     Jenny: Lois, if that is what you do to bus chaulk, I''d hate to know what Petey''s
     looks like.'
-  attribution: JY
+  attribution: JJ
   members:
   - jenny
   - lois
   year: 2016
 - id: 74
   text: Killing two buses is a personal record for us.
-  attribution: JE
+  attribution: JW
   members:
   - joe
   year: 2012
