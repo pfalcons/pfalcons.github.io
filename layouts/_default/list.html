@@ -1,0 +1,30 @@
+{{ define "main" }}
+  <div class="mx-auto max-w-4xl px-4 py-8">
+    <h1 class="font-heading text-4xl text-falcons-accent mb-8">{{ .Title }}</h1>
+    {{ with .Content }}
+      <div class="prose-content mb-8">
+        {{ . }}
+      </div>
+    {{ end }}
+    {{ $pages := .Pages }}
+    {{ if $pages }}
+      <div class="space-y-6">
+        {{ range $pages }}
+          <article class="bg-falcons-card border border-falcons-border rounded-lg p-6">
+            <h2 class="font-heading text-xl mb-1">
+              <a href="{{ .RelPermalink }}" class="text-falcons-link hover:text-falcons-accent-light no-underline">{{ .Title }}</a>
+            </h2>
+            {{ with .Date }}
+              <time datetime="{{ .Format "2006-01-02" }}" class="block text-sm text-falcons-text-muted mb-3">{{ .Format "January 2, 2006" }}</time>
+            {{ end }}
+            {{ with .Summary }}
+              <p class="text-falcons-text text-sm">{{ . | plainify | truncate 200 }}</p>
+            {{ end }}
+          </article>
+        {{ end }}
+      </div>
+    {{ else }}
+      <p class="text-falcons-text-muted italic">No content yet.</p>
+    {{ end }}
+  </div>
+{{ end }}

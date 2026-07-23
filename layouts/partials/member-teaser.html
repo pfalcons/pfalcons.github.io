@@ -1,0 +1,15 @@
+{{ $imgPath := "/images/members/profile_image_placeholder.png" }}
+{{ with .Params.image }}{{ $imgPath = printf "/images/members/%s" . }}{{ end }}
+{{ $imgPath := $imgPath | relURL }}
+<a href="{{ .RelPermalink }}" class="block bg-falcons-card border border-falcons-border rounded-lg p-4 text-center hover:border-falcons-accent transition-colors duration-150 no-underline">
+  <div class="mx-auto mb-3 h-20 w-20 overflow-hidden rounded-full border-2 border-falcons-border">
+    <img src="{{ $imgPath }}" alt="{{ .Title }}" class="h-full w-full object-cover" loading="lazy">
+  </div>
+  <h3 class="font-heading text-lg text-falcons-text truncate">{{ .Title }}</h3>
+  {{ with .Params.role }}
+    <p class="text-xs text-falcons-text-muted mt-1 leading-tight">{{ . }}</p>
+  {{ end }}
+  {{ with .Params.first_ragbrai }}
+    <p class="text-xs text-falcons-green mt-1">RAGBRAI {{ . }}</p>
+  {{ end }}
+</a>

@@ -1,7 +1,11 @@
 {{ define "main" }}
-  <main>
-    <div class="page">
-      <p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. <a href="{{ "/" | relURL }}">Head back home</a> to try finding it again.</p>
-    </div>
-  </main>
+  <div class="mx-auto max-w-2xl px-4 py-24 text-center">
+    <h1 class="font-heading text-6xl text-falcons-accent mb-6">404</h1>
+    <p class="text-xl text-falcons-text-muted mb-4">We took a wrong turn somewhere.</p>
+    <p class="text-falcons-text-muted mb-8">Either that URL got left in a bar along the route, or it never existed in the first place.</p>
+    <div class="text-6xl mb-8">🚴‍♂️</div>
+    <a href="{{ "" | relURL }}" class="inline-block bg-falcons-card border border-falcons-border rounded-lg px-6 py-3 text-falcons-link hover:text-falcons-accent-light no-underline transition-colors">
+      Head back to home base
+    </a>
+  </div>
 {{ end }}

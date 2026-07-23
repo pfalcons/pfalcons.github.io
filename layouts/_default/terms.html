@@ -1,0 +1,12 @@
+{{ define "main" }}
+  <div class="mx-auto max-w-4xl px-4 py-8">
+    <h1 class="font-heading text-4xl text-falcons-accent mb-8">{{ .Title }}</h1>
+    <div class="flex flex-wrap gap-3">
+      {{ range .Pages }}
+        <a href="{{ .RelPermalink }}" class="inline-block bg-falcons-card border border-falcons-border rounded-lg px-4 py-2 text-falcons-link hover:text-falcons-accent-light hover:border-falcons-accent no-underline transition-colors">
+          {{ .Title }}
+        </a>
+      {{ end }}
+    </div>
+  </div>
+{{ end }}

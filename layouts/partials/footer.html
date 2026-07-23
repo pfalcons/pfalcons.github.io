@@ -1,0 +1,10 @@
+<footer class="bg-falcons-nav border-t border-falcons-border mt-12">
+  <div class="mx-auto max-w-7xl px-4 py-8 text-center text-sm text-falcons-text-muted">
+    <div class="flex flex-wrap justify-center gap-4 mb-3">
+      <a href="{{ "/ragbrai/" | relURL }}" class="text-falcons-text-muted hover:text-falcons-accent-light no-underline transition-colors">RAGBRAI</a>
+      <a href="{{ "/about/" | relURL }}" class="text-falcons-text-muted hover:text-falcons-accent-light no-underline transition-colors">About</a>
+      <a href="{{ "/contact/" | relURL }}" class="text-falcons-text-muted hover:text-falcons-accent-light no-underline transition-colors">Contact</a>
+    </div>
+    <p>&copy; {{ now.Format "2006" }} {{ .Site.Params.author | default "Perineum Falcons" }}. All rights reserved. A RAGBRAI drinking team with a biking problem.</p>
+  </div>
+</footer>

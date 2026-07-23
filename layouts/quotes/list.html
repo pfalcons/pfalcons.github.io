@@ -1,0 +1,61 @@
+{{ define "main" }}
+  <div class="mx-auto max-w-4xl px-4 py-8">
+    <h1 class="font-heading text-4xl text-falcons-accent mb-4">{{ .Title }}</h1>
+    {{ with .Content }}
+      <div class="prose-content mb-8">
+        {{ . }}
+      </div>
+    {{ end }}
+
+    {{ $quotes := hugo.Data.quotes.quotes }}
+
+    <!-- Build year list -->
+    {{ $yearSet := dict }}
+    {{ $uncategorized := slice }}
+    {{ range $quotes }}
+      {{ if .year }}
+        {{ $yearStr := string .year }}
+        {{ $list := index $yearSet $yearStr }}
+        {{ if not $list }}
+          {{ $yearSet = merge $yearSet (dict $yearStr (slice .)) }}
+        {{ else }}
+          {{ $yearSet = merge $yearSet (dict $yearStr ($list | append .)) }}
+        {{ end }}
+      {{ else }}
+        {{ $uncategorized = $uncategorized | append . }}
+      {{ end }}
+    {{ end }}
+
+    {{ $sortedYears := slice }}
+    {{ range $yearStr, $_ := $yearSet }}
+      {{ $sortedYears = $sortedYears | append $yearStr }}
+    {{ end }}
+    {{ $sortedYears = sort $sortedYears "value" "desc" }}
+
+    {{ range $sortedYears }}
+      {{ $yearStr := . }}
+      {{ $yearQuotes := index $yearSet $yearStr }}
+      <h2 class="font-heading text-2xl text-falcons-accent mb-4 mt-8 border-b border-falcons-border pb-2">{{ $yearStr }}</h2>
+      <div class="space-y-4 mb-8">
+        {{ range $yearQuotes }}
+          <blockquote class="bg-falcons-card border border-falcons-border rounded-lg p-5 border-l-4 border-l-falcons-accent">
+            <p class="text-falcons-text mb-2">{{ .text | markdownify }}</p>
+            <footer class="text-sm text-falcons-text-muted">— {{ .attribution }}</footer>
+          </blockquote>
+        {{ end }}
+      </div>
+    {{ end }}
+
+    {{ with $uncategorized }}
+      <h2 class="font-heading text-2xl text-falcons-text-muted mb-4 mt-8 border-b border-falcons-border pb-2">Undated</h2>
+      <div class="space-y-4 mb-8">
+        {{ range . }}
+          <blockquote class="bg-falcons-card border border-falcons-border rounded-lg p-5 border-l-4 border-l-falcons-accent">
+            <p class="text-falcons-text mb-2">{{ .text | markdownify }}</p>
+            <footer class="text-sm text-falcons-text-muted">— {{ .attribution }}</footer>
+          </blockquote>
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+{{ end }}

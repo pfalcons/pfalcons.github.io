@@ -1,0 +1,30 @@
+<header class="bg-falcons-nav border-b border-falcons-border">
+  <nav class="mx-auto max-w-7xl flex items-center justify-between px-4 py-3">
+    <!-- Logo -->
+    <a href="{{ "" | relLangURL }}" class="font-heading text-2xl uppercase tracking-wider text-falcons-accent hover:text-falcons-accent-light no-underline">
+      PFALCONS
+    </a>
+
+    <!-- Hamburger checkbox (mobile) -->
+    <input type="checkbox" id="nav-toggle" class="peer hidden">
+    <label for="nav-toggle" class="flex flex-col gap-1 cursor-pointer md:hidden">
+      <span class="block h-0.5 w-6 bg-falcons-text rounded"></span>
+      <span class="block h-0.5 w-6 bg-falcons-text rounded"></span>
+      <span class="block h-0.5 w-6 bg-falcons-text rounded"></span>
+    </label>
+
+    <!-- Nav links -->
+    <ul class="hidden peer-checked:flex peer-checked:flex-col peer-checked:absolute peer-checked:top-14 peer-checked:left-0 peer-checked:w-full peer-checked:bg-falcons-nav peer-checked:border-b peer-checked:border-falcons-border peer-checked:z-50 md:flex md:flex-row md:relative md:top-auto md:left-auto md:w-auto md:bg-transparent md:border-0 md:z-auto items-center gap-1">
+      {{ $currentPage := . }}
+      {{ $sections := slice (dict "url" "/" "name" "Home") (dict "url" "/about/" "name" "About") (dict "url" "/members/" "name" "Members") (dict "url" "/ragbrai/" "name" "RAGBRAI") (dict "url" "/guide/" "name" "THE GUIDE") (dict "url" "/quotes/" "name" "Quotes") (dict "url" "/contact/" "name" "Contact") }}
+      {{ range $sections }}
+        {{ $isActive := or (eq $currentPage.RelPermalink .url) (and (ne .url "/") (hasPrefix $currentPage.RelPermalink .url)) }}
+        <li>
+          <a href="{{ .url | relURL }}" class="block px-3 py-2 text-sm uppercase tracking-wider {{ if $isActive }}text-falcons-accent{{ else }}text-falcons-text hover:text-falcons-accent-light{{ end }} no-underline transition-colors duration-150">
+            {{ .name }}
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  </nav>
+</header>

@@ -1,0 +1,44 @@
+{{ define "main" }}
+  <div class="mx-auto max-w-7xl px-4 py-8">
+    <h1 class="font-heading text-4xl text-falcons-accent mb-8">{{ .Title }}</h1>
+
+    {{ with .Content }}
+      <div class="prose-content mb-8 max-w-3xl">
+        {{ . }}
+      </div>
+    {{ end }}
+
+    {{ $members := where .Site.RegularPages "Section" "members" }}
+    {{ $activeMembers := where $members ".Params.active" true }}
+    {{ $coOwners := where $activeMembers ".Params.co_owner" true }}
+    {{ $nonCoActive := where $activeMembers ".Params.co_owner" "!=" true }}
+    {{ $pastMembers := where $members ".Params.active" "!=" true }}
+
+    {{ with $coOwners }}
+      <h2 class="font-heading text-2xl text-falcons-green mb-4 border-b border-falcons-border pb-2">Co-Owners</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mb-10">
+        {{ range . }}
+          {{ partial "member-teaser.html" . }}
+        {{ end }}
+      </div>
+    {{ end }}
+
+    {{ with $nonCoActive }}
+      <h2 class="font-heading text-2xl text-falcons-accent mb-4 border-b border-falcons-border pb-2">Active Members</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mb-10">
+        {{ range . }}
+          {{ partial "member-teaser.html" . }}
+        {{ end }}
+      </div>
+    {{ end }}
+
+    {{ with $pastMembers }}
+      <h2 class="font-heading text-2xl text-falcons-text-muted mb-4 border-b border-falcons-border pb-2">Past Members</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mb-10">
+        {{ range . }}
+          {{ partial "member-teaser.html" . }}
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+{{ end }}

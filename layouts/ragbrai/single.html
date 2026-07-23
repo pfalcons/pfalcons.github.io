@@ -1,0 +1,70 @@
+{{ define "main" }}
+  {{ $route := index hugo.Data.ragbrai .File.ContentBaseName }}
+
+  <div class="mx-auto max-w-4xl px-4 py-8">
+    <h1 class="font-heading text-4xl text-falcons-accent mb-2">{{ .Title }}</h1>
+    {{ with $route }}
+      <p class="text-xl text-falcons-text-muted mb-6">{{ .name }}</p>
+
+      <!-- Route stats -->
+      <div class="bg-falcons-card border border-falcons-border rounded-lg p-6 mb-8">
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
+          {{ with .mileage }}
+            <div>
+              <span class="block font-heading text-2xl text-falcons-accent">{{ . }}</span>
+              <span class="text-xs text-falcons-text-muted uppercase tracking-wider">Miles</span>
+            </div>
+          {{ end }}
+          {{ with .climb }}
+            <div>
+              <span class="block font-heading text-2xl text-falcons-accent">{{ . }}</span>
+              <span class="text-xs text-falcons-text-muted uppercase tracking-wider">Climb (ft)</span>
+            </div>
+          {{ end }}
+          {{ with .logo }}
+            <div class="col-span-2 md:col-span-1 flex items-center justify-center">
+              <img src="{{ printf "/images/ragbrai/%s" . | relURL }}" alt="{{ $.Title }} logo" class="max-h-20 object-contain" loading="lazy" onerror="this.style.display='none'">
+            </div>
+          {{ end }}
+        </div>
+      </div>
+
+      <!-- Towns list -->
+      {{ with .towns }}
+        <h2 class="font-heading text-2xl text-falcons-accent mb-3 border-b border-falcons-border pb-2">Route</h2>
+        <ol class="list-decimal list-inside space-y-1 text-falcons-text mb-8">
+          {{ range . }}
+            {{ if . }}
+              <li>{{ . }}</li>
+            {{ end }}
+          {{ end }}
+        </ol>
+      {{ end }}
+
+      <!-- Gallery link -->
+      {{ with .gallery_url }}
+        <div class="mb-8">
+          <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="inline-block bg-falcons-card border border-falcons-border rounded-lg px-5 py-3 text-falcons-link hover:text-falcons-accent-light no-underline transition-colors">
+            📸 View Photo Gallery
+          </a>
+        </div>
+      {{ end }}
+
+      <!-- Map link -->
+      {{ with .map }}
+        <div class="mb-8">
+          <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="inline-block bg-falcons-card border border-falcons-border rounded-lg px-5 py-3 text-falcons-link hover:text-falcons-accent-light no-underline transition-colors">
+            🗺️ View Route Map
+          </a>
+        </div>
+      {{ end }}
+    {{ end }}
+
+    <!-- Body content -->
+    {{ with .Content }}
+      <div class="prose-content">
+        {{ . }}
+      </div>
+    {{ end }}
+  </div>
+{{ end }}

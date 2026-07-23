@@ -1,9 +1,40 @@
 {{ define "main" }}
-  <main>
-    <h1>{{ .Site.Title }}</h1>
-    <p>{{ .Site.Params.description }}</p>
-    <div>
-      {{ .Content }}
+  <div class="mx-auto max-w-5xl px-4 py-12 text-center">
+    <!-- Banner -->
+    <div class="mb-10">
+      <h1 class="font-heading text-5xl md:text-7xl uppercase tracking-widest text-falcons-accent mb-4">{{ .Site.Title }}</h1>
+      <p class="text-xl text-falcons-text-muted max-w-2xl mx-auto">{{ .Site.Params.description }}</p>
     </div>
-  </main>
+
+    {{ with .Content }}
+      <div class="prose-content mb-12 max-w-3xl mx-auto">
+        {{ . }}
+      </div>
+    {{ end }}
+
+    <!-- Quick links grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+      <a href="{{ "/members/" | relURL }}" class="group block bg-falcons-card border border-falcons-border rounded-lg p-8 hover:border-falcons-accent transition-all duration-150 no-underline">
+        <h2 class="font-heading text-2xl text-falcons-accent group-hover:text-falcons-accent-light mb-2">Members</h2>
+        <p class="text-falcons-text-muted text-sm">Meet the crew. Co-owners, active riders, and alumni.</p>
+      </a>
+      <a href="{{ "/ragbrai/" | relURL }}" class="group block bg-falcons-card border border-falcons-border rounded-lg p-8 hover:border-falcons-accent transition-all duration-150 no-underline">
+        <h2 class="font-heading text-2xl text-falcons-accent group-hover:text-falcons-accent-light mb-2">RAGBRAI</h2>
+        <p class="text-falcons-text-muted text-sm">Every year, every route since 2006.</p>
+      </a>
+      <a href="{{ "/quotes/" | relURL }}" class="group block bg-falcons-card border border-falcons-border rounded-lg p-8 hover:border-falcons-accent transition-all duration-150 no-underline">
+        <h2 class="font-heading text-2xl text-falcons-accent group-hover:text-falcons-accent-light mb-2">Quotes</h2>
+        <p class="text-falcons-text-muted text-sm">The Falcon words of wisdom.</p>
+      </a>
+      <a href="{{ "/guide/" | relURL }}" class="group block bg-falcons-card border border-falcons-border rounded-lg p-8 hover:border-falcons-accent transition-all duration-150 no-underline">
+        <h2 class="font-heading text-2xl text-falcons-accent group-hover:text-falcons-accent-light mb-2">THE GUIDE</h2>
+        <p class="text-falcons-text-muted text-sm">A virgin's guide to RAGBRAI.</p>
+      </a>
+    </div>
+
+    <!-- Not your normal club -->
+    <div class="mt-16 text-falcons-text-muted">
+      <p class="text-lg italic">A RAGBRAI drinking team with a biking problem.</p>
+    </div>
+  </div>
 {{ end }}

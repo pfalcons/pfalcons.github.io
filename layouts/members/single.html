@@ -1,0 +1,71 @@
+{{ define "main" }}
+  <div class="mx-auto max-w-4xl px-4 py-8">
+    <div class="bg-falcons-card border border-falcons-border rounded-lg p-6 md:p-8 mb-8">
+      <div class="flex flex-col md:flex-row gap-6">
+        <!-- Photo -->
+        <div class="flex-shrink-0">
+          {{ $imgPath := "/images/members/profile_image_placeholder.png" }}
+          {{ with .Params.image }}{{ $imgPath = printf "/images/members/%s" . }}{{ end }}
+          <div class="mx-auto md:mx-0 h-32 w-32 overflow-hidden rounded-full border-2 border-falcons-border">
+            <img src="{{ $imgPath | relURL }}" alt="{{ .Title }}" class="h-full w-full object-cover" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Info -->
+        <div class="flex-1">
+          <h1 class="font-heading text-3xl text-falcons-accent mb-1">{{ .Title }}</h1>
+          {{ with .Params.nickname }}
+            <p class="text-falcons-text-muted italic mb-2">"{{ . }}"</p>
+          {{ end }}
+          {{ with .Params.role }}
+            <p class="text-falcons-text mb-3">{{ . }}</p>
+          {{ end }}
+
+          <!-- Badges -->
+          <div class="flex flex-wrap gap-2">
+            {{ if eq .Params.co_owner true }}
+              <span class="inline-block bg-falcons-accent/20 text-falcons-accent text-xs font-semibold px-2.5 py-1 rounded border border-falcons-accent/30">Co-Owner</span>
+            {{ end }}
+            {{ if eq .Params.active true }}
+              <span class="inline-block bg-falcons-green/20 text-falcons-green text-xs font-semibold px-2.5 py-1 rounded border border-falcons-green/30">Active</span>
+            {{ end }}
+            {{ if .Params.driver }}
+              <span class="inline-block bg-falcons-link/20 text-falcons-link text-xs font-semibold px-2.5 py-1 rounded border border-falcons-link/30">Driver</span>
+            {{ end }}
+            {{ with .Params.first_ragbrai }}
+              <span class="inline-block bg-falcons-card border border-falcons-border text-falcons-text-muted text-xs font-semibold px-2.5 py-1 rounded">First RAGBRAI: {{ . }}</span>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bio -->
+    {{ with .Content }}
+      <div class="prose-content mb-8">
+        {{ . }}
+      </div>
+    {{ end }}
+
+    <!-- Member's quotes from data/quotes.yaml -->
+    {{ $shortName := .Params.short_name }}
+    {{ with $shortName }}
+      {{ $allQuotes := hugo.Data.quotes.quotes }}
+      {{ $memberQuotes := where $allQuotes "members" "intersect" (slice .) }}
+      {{ if $memberQuotes }}
+        <h2 class="font-heading text-2xl text-falcons-accent mb-4 border-b border-falcons-border pb-2">Quotes</h2>
+        <div class="space-y-4">
+          {{ range $memberQuotes }}
+            <blockquote class="bg-falcons-card border border-falcons-border rounded-lg p-4 border-l-4 border-l-falcons-accent">
+              <p class="text-falcons-text mb-2">{{ .text | markdownify }}</p>
+              <footer class="text-sm text-falcons-text-muted">
+                — {{ .attribution }}
+                {{ with .year }}, {{ . }}{{ end }}
+              </footer>
+            </blockquote>
+          {{ end }}
+        </div>
+      {{ end }}
+    {{ end }}
+  </div>
+{{ end }}

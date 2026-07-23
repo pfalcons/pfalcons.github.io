@@ -1,0 +1,62 @@
+{{ define "main" }}
+  <div class="mx-auto max-w-7xl px-4 py-8">
+    <h1 class="font-heading text-4xl text-falcons-accent mb-4">{{ .Title }}</h1>
+    {{ with .Content }}
+      <div class="prose-content mb-8 max-w-3xl">
+        {{ . }}
+      </div>
+    {{ end }}
+
+    {{ $data := hugo.Data.ragbrai }}
+
+    <!-- Build sorted year list -->
+    {{ $years := slice }}
+    {{ range $yearStr, $_ := $data }}
+      {{ if ne $yearStr "2020-1" }}
+        {{ $years = $years | append $yearStr }}
+      {{ end }}
+    {{ end }}
+    {{ $sortedYears := sort $years "value" "desc" }}
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      {{ range $sortedYears }}
+        {{ $yearStr := . }}
+        {{ $route := index $data $yearStr }}
+        {{ $yearPage := $.Site.GetPage (printf "/ragbrai/%s" $yearStr) }}
+        <a href="{{ if $yearPage }}{{ $yearPage.RelPermalink }}{{ else }}{{ printf "/ragbrai/%s/" $yearStr | relURL }}{{ end }}" class="block bg-falcons-card border border-falcons-border rounded-lg p-5 hover:border-falcons-accent transition-all duration-150 no-underline group">
+          <div class="text-center">
+            {{ with $route.logo }}
+              <div class="h-20 mb-3 flex items-center justify-center">
+                <img src="{{ printf "/images/ragbrai/%s" . | relURL }}" alt="{{ $yearStr }}" class="max-h-full max-w-full object-contain" loading="lazy" onerror="this.style.display='none'">
+              </div>
+            {{ end }}
+            <h2 class="font-heading text-2xl text-falcons-text group-hover:text-falcons-accent transition-colors">{{ $yearStr }}</h2>
+            <p class="text-falcons-text-muted text-sm mt-1">{{ $route.name }}</p>
+            <div class="mt-3 flex flex-wrap justify-center gap-x-3 text-xs text-falcons-text-muted">
+              {{ with $route.mileage }}<span>{{ . }} mi</span>{{ end }}
+              {{ with $route.climb }}<span>{{ . }} ft</span>{{ end }}
+            </div>
+          </div>
+        </a>
+      {{ end }}
+    </div>
+
+    <!-- Special: Katy Trail 2020-1 -->
+    {{ $katy := index $data "2020-1" }}
+    {{ if $katy }}
+      <h2 class="font-heading text-2xl text-falcons-accent mt-10 mb-4 border-b border-falcons-border pb-2">Bonus Rides</h2>
+      {{ $katyPage := $.Site.GetPage "/ragbrai/2020-1" }}
+      <a href="{{ if $katyPage }}{{ $katyPage.RelPermalink }}{{ else }}/ragbrai/2020-1/{{ end }}" class="block bg-falcons-card border border-falcons-border rounded-lg p-5 hover:border-falcons-accent transition-all duration-150 no-underline max-w-sm group">
+        <div class="text-center">
+          {{ with $katy.logo }}
+            <div class="h-20 mb-3 flex items-center justify-center">
+              <img src="{{ printf "/images/ragbrai/%s" . | relURL }}" alt="2020-1" class="max-h-full max-w-full object-contain" loading="lazy" onerror="this.style.display='none'">
+            </div>
+          {{ end }}
+          <h2 class="font-heading text-2xl text-falcons-text group-hover:text-falcons-accent transition-colors">2020</h2>
+          <p class="text-falcons-text-muted text-sm mt-1">{{ $katy.name }}</p>
+        </div>
+      </a>
+    {{ end }}
+  </div>
+{{ end }}

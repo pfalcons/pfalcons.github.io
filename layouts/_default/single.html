@@ -1,8 +1,10 @@
 {{ define "main" }}
-  <article>
-    <h1>{{ .Title }}</h1>
-    {{ with .Date }}<time datetime="{{ .Format "2006-01-02" }}">{{ .Format "January 2, 2006" }}</time>{{ end }}
-    <div>
+  <article class="mx-auto max-w-4xl px-4 py-8">
+    <h1 class="text-falcons-accent mb-6">{{ .Title }}</h1>
+    {{ with .Date }}
+      <time datetime="{{ .Format "2006-01-02" }}" class="block text-falcons-text-muted text-sm mb-6">{{ .Format "January 2, 2006" }}</time>
+    {{ end }}
+    <div class="prose-content">
       {{ .Content }}
     </div>
   </article>
