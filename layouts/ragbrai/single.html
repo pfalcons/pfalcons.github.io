@@ -11,12 +11,18 @@
         <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
           {{ with .mileage }}
             <div>
+              <svg class="w-6 h-6 mx-auto mb-1 text-falcons-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+              </svg>
               <span class="block font-heading text-2xl text-falcons-accent">{{ . }}</span>
               <span class="text-xs text-falcons-text-muted uppercase tracking-wider">Miles</span>
             </div>
           {{ end }}
           {{ with .climb }}
             <div>
+              <svg class="w-6 h-6 mx-auto mb-1 text-falcons-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21l6-6 4 4 8-8M17 21V3m0 0l-4 4m4-4l4 4"/>
+              </svg>
               <span class="block font-heading text-2xl text-falcons-accent">{{ . }}</span>
               <span class="text-xs text-falcons-text-muted uppercase tracking-wider">Climb (ft)</span>
             </div>
@@ -38,7 +44,7 @@
 
       <!-- Towns list -->
       {{ with .towns }}
-        <h2 class="font-heading text-2xl text-falcons-accent mb-3 border-b border-falcons-border pb-2">Route</h2>
+        <h2 class="font-heading text-2xl text-falcons-accent mb-3 border-b border-falcons-border pb-2">Route <span class="text-sm text-falcons-text-muted font-normal">(west to east)</span></h2>
         <ol class="list-decimal list-inside space-y-1 text-falcons-text mb-8">
           {{ range . }}
             {{ if . }}
