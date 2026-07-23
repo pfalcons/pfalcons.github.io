@@ -42,16 +42,23 @@
         </div>
       </div>
 
-      <!-- Towns list -->
+      <!-- Towns list by day -->
       {{ with .towns }}
         <h2 class="font-heading text-2xl text-falcons-accent mb-3 border-b border-falcons-border pb-2">Route <span class="text-sm text-falcons-text-muted font-normal">(west to east)</span></h2>
-        <ol class="list-decimal list-inside space-y-1 text-falcons-text mb-8">
-          {{ range . }}
-            {{ if . }}
-              <li>{{ . }}</li>
+        {{ $days := slice "Sunday" "Monday" "Tuesday" "Wednesday" "Thursday" "Friday" "Saturday" }}
+        {{ $towns := . }}
+        <ul class="space-y-2 text-falcons-text mb-8">
+          {{ range $index, $day := $days }}
+            {{ $from := index $towns $index }}
+            {{ $to := index $towns (add $index 1) }}
+            {{ if and $from $to }}
+              <li class="flex items-start gap-2">
+                <span class="inline-block bg-falcons-accent/20 text-falcons-accent text-xs font-semibold px-2 py-0.5 rounded mt-0.5 whitespace-nowrap min-w-[4.5rem] text-center">{{ $day }}</span>
+                <span>{{ $from }} <span class="text-falcons-text-muted">→</span> {{ $to }}</span>
+              </li>
             {{ end }}
           {{ end }}
-        </ol>
+        </ul>
       {{ end }}
 
       <!-- Gallery link -->
