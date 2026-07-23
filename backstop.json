@@ -1,0 +1,138 @@
+{
+  "id": "pfalcons_visual_regression",
+  "viewports": [
+    {
+      "name": "phone",
+      "width": 375,
+      "height": 812
+    },
+    {
+      "name": "tablet",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "name": "desktop",
+      "width": 1280,
+      "height": 900
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Homepage",
+      "url": "https://perineumfalcons.com/",
+      "referenceUrl": "https://perineumfalcons.com/",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectors": ["document"],
+      "readyEvent": null,
+      "delay": 2000,
+      "misMatchThreshold": 5
+    },
+    {
+      "label": "Members List",
+      "url": "http://localhost:1314/members/",
+      "referenceUrl": "https://perineumfalcons.com/members/",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectors": ["document"],
+      "readyEvent": null,
+      "delay": 2000,
+      "misMatchThreshold": 5
+    },
+    {
+      "label": "Member Detail (Joe)",
+      "url": "http://localhost:1314/members/joe/",
+      "referenceUrl": "https://perineumfalcons.com/members/joe/",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectors": ["document"],
+      "readyEvent": null,
+      "delay": 2000,
+      "misMatchThreshold": 5
+    },
+    {
+      "label": "RAGBRAI List",
+      "url": "http://localhost:1314/ragbrai/",
+      "referenceUrl": "https://perineumfalcons.com/ragbrai/",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectors": ["document"],
+      "readyEvent": null,
+      "delay": 2000,
+      "misMatchThreshold": 5
+    },
+    {
+      "label": "RAGBRAI Detail (2026)",
+      "url": "http://localhost:1314/ragbrai/2026/",
+      "referenceUrl": "https://perineumfalcons.com/ragbrai/2026/",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectors": ["document"],
+      "readyEvent": null,
+      "delay": 2000,
+      "misMatchThreshold": 5
+    },
+    {
+      "label": "Quotes",
+      "url": "http://localhost:1314/quotes/",
+      "referenceUrl": "https://perineumfalcons.com/quotes/",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectors": ["document"],
+      "readyEvent": null,
+      "delay": 2000,
+      "misMatchThreshold": 5
+    },
+    {
+      "label": "About",
+      "url": "http://localhost:1314/about/",
+      "referenceUrl": "https://perineumfalcons.com/about/",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectors": ["document"],
+      "readyEvent": null,
+      "delay": 2000,
+      "misMatchThreshold": 5
+    },
+    {
+      "label": "THE GUIDE",
+      "url": "http://localhost:1314/guide/",
+      "referenceUrl": "https://perineumfalcons.com/guide/",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectors": ["document"],
+      "readyEvent": null,
+      "delay": 2000,
+      "misMatchThreshold": 5
+    },
+    {
+      "label": "Contact",
+      "url": "http://localhost:1314/contact/",
+      "referenceUrl": "https://perineumfalcons.com/contact/",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectors": ["document"],
+      "readyEvent": null,
+      "delay": 2000,
+      "misMatchThreshold": 5
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop/reference",
+    "bitmaps_test": "backstop/test",
+    "engine_scripts": "backstop/scripts",
+    "html_report": "backstop/html_report",
+    "ci_report": "backstop/ci_report"
+  },
+  "report": ["browser", "CI"],
+  "engine": "playwright",
+  "engineOptions": {
+    "headless": true,
+    "args": ["--no-sandbox"]
+  },
+  "asyncCaptureLimit": 3,
+  "asyncCompareLimit": 5,
+  "debug": false,
+  "debugWindow": false
+}
