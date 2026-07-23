@@ -4,10 +4,16 @@
       <div class="flex flex-col md:flex-row gap-6">
         <!-- Photo -->
         <div class="flex-shrink-0">
-          {{ $imgPath := "/images/members/profile_image_placeholder.png" }}
-          {{ with .Params.image }}{{ $imgPath = printf "/images/members/%s" . }}{{ end }}
+          {{ $imgPath := "images/members/profile_image_placeholder.png" }}
+          {{ with .Params.image }}{{ $imgPath = printf "images/members/%s" . }}{{ end }}
           <div class="mx-auto md:mx-0 h-32 w-32 overflow-hidden rounded-full border-2 border-falcons-border">
-            <img src="{{ $imgPath | relURL }}" alt="{{ .Title }}" class="h-full w-full object-cover" loading="lazy">
+            {{ partial "responsive-image" (dict
+              "imagePath" $imgPath
+              "alt"      .Title
+              "class"    "h-full w-full object-cover"
+              "sizes"    "128px"
+              "widths"   (slice 200 400 800)
+            ) }}
           </div>
         </div>
 

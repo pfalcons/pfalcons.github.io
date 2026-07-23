@@ -23,7 +23,14 @@
           {{ end }}
           {{ with .logo }}
             <div class="col-span-2 md:col-span-1 flex items-center justify-center">
-              <img src="{{ printf "/images/ragbrai/%s" . | relURL }}" alt="{{ $.Title }} logo" class="max-h-20 object-contain" loading="lazy" onerror="this.style.display='none'">
+              {{ $logoPath := printf "images/ragbrai/%s" . }}
+              {{ partial "responsive-image" (dict
+                "imagePath" $logoPath
+                "alt"      (printf "%s logo" $.Title)
+                "class"    "max-h-20 object-contain"
+                "sizes"    "200px"
+                "widths"   (slice 200 400 800)
+              ) }}
             </div>
           {{ end }}
         </div>

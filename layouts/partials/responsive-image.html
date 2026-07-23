@@ -1,0 +1,40 @@
+{{- /* responsive-image.html: Generates a <picture> element with AVIF/WebP responsive srcset. */ -}}
+{{- $imagePath := .imagePath -}}
+{{- $alt       := .alt -}}
+{{- $class     := .class | default "" -}}
+{{- $loading   := .loading | default "lazy" -}}
+{{- $sizes     := .sizes | default "100vw" -}}
+{{- $widths    := .widths | default (slice 400 800 1200) -}}
+
+{{- $src := resources.Get $imagePath -}}
+
+{{- if $src -}}
+  {{- /* AVIF srcset */ -}}
+  {{- $avifSrcset := slice -}}
+  {{- range $widths -}}
+    {{- $resized := $src.Resize (printf "%dx" .) -}}
+    {{- $avif := $resized.Process "avif" -}}
+    {{- $avifSrcset = $avifSrcset | append (printf "%s %dw" $avif.RelPermalink .) -}}
+  {{- end -}}
+
+  {{- /* WebP srcset */ -}}
+  {{- $webpSrcset := slice -}}
+  {{- range $widths -}}
+    {{- $resized := $src.Resize (printf "%dx" .) -}}
+    {{- $webp := $resized.Process "webp" -}}
+    {{- $webpSrcset = $webpSrcset | append (printf "%s %dw" $webp.RelPermalink .) -}}
+  {{- end -}}
+
+  {{- /* Fallback <img>: largest width in PNG for universal compatibility */ -}}
+  {{- $fallbackWidth := index $widths (sub (len $widths) 1) -}}
+  {{- $fallback := $src.Resize (printf "%dx" $fallbackWidth) -}}
+
+  <picture>
+    <source srcset="{{ delimit $avifSrcset ", " }}" sizes="{{ $sizes }}" type="image/avif">
+    <source srcset="{{ delimit $webpSrcset ", " }}" sizes="{{ $sizes }}" type="image/webp">
+    <img src="{{ $fallback.RelPermalink }}" alt="{{ $alt }}" width="{{ $fallback.Width }}" height="{{ $fallback.Height }}" loading="{{ $loading }}" decoding="async" class="{{ $class }}">
+  </picture>
+{{- else -}}
+  {{- /* Image not found in assets — fall back to static URL */ -}}
+  <img src="{{ $imagePath | relURL }}" alt="{{ $alt }}" loading="{{ $loading }}" class="{{ $class }}">
+{{- end -}}

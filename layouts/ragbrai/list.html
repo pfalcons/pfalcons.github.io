@@ -27,7 +27,14 @@
           <div class="text-center">
             {{ with $route.logo }}
               <div class="h-20 mb-3 flex items-center justify-center">
-                <img src="{{ printf "/images/ragbrai/%s" . | relURL }}" alt="{{ $yearStr }}" class="max-h-full max-w-full object-contain" loading="lazy" onerror="this.style.display='none'">
+                {{ $logoPath := printf "images/ragbrai/%s" . }}
+                {{ partial "responsive-image" (dict
+                  "imagePath" $logoPath
+                  "alt"      $yearStr
+                  "class"    "max-h-full max-w-full object-contain"
+                  "sizes"    "(max-width: 640px) 50vw, 25vw"
+                  "widths"   (slice 200 400 800)
+                ) }}
               </div>
             {{ end }}
             <h2 class="font-heading text-2xl text-falcons-text group-hover:text-falcons-accent transition-colors">{{ $yearStr }}</h2>
@@ -50,7 +57,14 @@
         <div class="text-center">
           {{ with $katy.logo }}
             <div class="h-20 mb-3 flex items-center justify-center">
-              <img src="{{ printf "/images/ragbrai/%s" . | relURL }}" alt="2020-1" class="max-h-full max-w-full object-contain" loading="lazy" onerror="this.style.display='none'">
+              {{ $katyLogoPath := printf "images/ragbrai/%s" . }}
+              {{ partial "responsive-image" (dict
+                "imagePath" $katyLogoPath
+                "alt"      "2020-1"
+                "class"    "max-h-full max-w-full object-contain"
+                "sizes"    "50vw"
+                "widths"   (slice 200 400 800)
+              ) }}
             </div>
           {{ end }}
           <h2 class="font-heading text-2xl text-falcons-text group-hover:text-falcons-accent transition-colors">2020</h2>

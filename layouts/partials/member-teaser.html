@@ -1,9 +1,14 @@
-{{ $imgPath := "/images/members/profile_image_placeholder.png" }}
-{{ with .Params.image }}{{ $imgPath = printf "/images/members/%s" . }}{{ end }}
-{{ $imgPath := $imgPath | relURL }}
+{{ $imgPath := "images/members/profile_image_placeholder.png" }}
+{{ with .Params.image }}{{ $imgPath = printf "images/members/%s" . }}{{ end }}
 <a href="{{ .RelPermalink }}" class="block bg-falcons-card border border-falcons-border rounded-lg p-4 text-center hover:border-falcons-accent transition-colors duration-150 no-underline">
   <div class="mx-auto mb-3 h-20 w-20 overflow-hidden rounded-full border-2 border-falcons-border">
-    <img src="{{ $imgPath }}" alt="{{ .Title }}" class="h-full w-full object-cover" loading="lazy">
+    {{ partial "responsive-image" (dict
+      "imagePath" $imgPath
+      "alt"      .Title
+      "class"    "h-full w-full object-cover"
+      "sizes"    "80px"
+      "widths"   (slice 200 400 800)
+    ) }}
   </div>
   <h3 class="font-heading text-lg text-falcons-text truncate">{{ .Title }}</h3>
   {{ with .Params.role }}
