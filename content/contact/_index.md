@@ -2,6 +2,8 @@
 title: Contact
 ---
 
+Interested in riding with the Perineum Falcons? We're always looking for new members who can keep up — both on the bike and at the bar. The team is anchored in Menlo, Iowa and we ride RAGBRAI every year. If you think you've got what it takes (a bike, a liver, and a sense of humor), drop us a line.
+
 <style>
   #g-recaptcha-response {
 display: block !important;

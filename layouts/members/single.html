@@ -6,7 +6,7 @@
         <div class="flex-shrink-0">
           {{ $imgPath := "images/members/profile_image_placeholder.png" }}
           {{ with .Params.image }}{{ $imgPath = printf "images/members/%s" . }}{{ end }}
-          <div class="mx-auto md:mx-0 h-32 w-32 overflow-hidden rounded-full border-2 border-falcons-border">
+          <div class="mx-auto md:mx-0 h-32 w-32 overflow-hidden border-2 border-falcons-border">
             {{ partial "responsive-image" (dict
               "imagePath" $imgPath
               "alt"      .Title

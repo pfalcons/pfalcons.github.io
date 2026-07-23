@@ -23,7 +23,8 @@
         {{ $yearStr := . }}
         {{ $route := index $data $yearStr }}
         {{ $yearPage := $.Site.GetPage (printf "/ragbrai/%s" $yearStr) }}
-        <a href="{{ if $yearPage }}{{ $yearPage.RelPermalink }}{{ else }}{{ printf "/ragbrai/%s/" $yearStr | relURL }}{{ end }}" class="block bg-falcons-card border border-falcons-border rounded-lg p-5 hover:border-falcons-accent transition-all duration-150 no-underline group">
+        {{ if $yearPage }}
+        <a href="{{ $yearPage.RelPermalink }}" class="block bg-falcons-card border border-falcons-border rounded-lg p-5 hover:border-falcons-accent transition-all duration-150 no-underline group">
           <div class="text-center">
             {{ with $route.logo }}
               <div class="h-20 mb-3 flex items-center justify-center">
@@ -45,22 +46,23 @@
             </div>
           </div>
         </a>
+        {{ end }}
       {{ end }}
     </div>
 
     <!-- Special: Katy Trail 2020-1 -->
     {{ $katy := index $data "2020-1" }}
-    {{ if $katy }}
+    {{ $katyPage := $.Site.GetPage "/ragbrai/2020-1" }}
+    {{ if and $katy $katyPage }}
       <h2 class="font-heading text-2xl text-falcons-accent mt-10 mb-4 border-b border-falcons-border pb-2">Bonus Rides</h2>
-      {{ $katyPage := $.Site.GetPage "/ragbrai/2020-1" }}
-      <a href="{{ if $katyPage }}{{ $katyPage.RelPermalink }}{{ else }}/ragbrai/2020-1/{{ end }}" class="block bg-falcons-card border border-falcons-border rounded-lg p-5 hover:border-falcons-accent transition-all duration-150 no-underline max-w-sm group">
+      <a href="{{ $katyPage.RelPermalink }}" class="block bg-falcons-card border border-falcons-border rounded-lg p-5 hover:border-falcons-accent transition-all duration-150 no-underline max-w-sm group">
         <div class="text-center">
           {{ with $katy.logo }}
-            <div class="h-20 mb-3 flex items-center justify-center">
+            <div class="h-20 mb-3 flex items-center justify-center overflow-hidden">
               {{ $katyLogoPath := printf "images/ragbrai/%s" . }}
               {{ partial "responsive-image" (dict
                 "imagePath" $katyLogoPath
-                "alt"      "2020-1"
+                "alt"      "2020 Katy Trail"
                 "class"    "max-h-full max-w-full object-contain"
                 "sizes"    "50vw"
                 "widths"   (slice 200 400 800)

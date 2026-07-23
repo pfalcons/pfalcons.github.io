@@ -81,3 +81,15 @@ Packing for your first RAGBRAI can be a daunting task. Fortunately, the top bras
 - Walking tacos are not a myth. They are a lifestyle.
 - You will lose something. Accept this now. It is the RAGBRAI tax.
 - If you think you've packed enough underwear, pack three more pairs.
+
+### Perineum Falcons Guide to Lactating on RAGBRAI
+
+We tried to put a mini fridge on the bus my first time to save the milk. The bus couldn't handle it. So Mike dumped most of my milk. It was kind of freeing because then I could drink without worry. The last time I pumped with the twins I rode just one day so any time I pumped near the bus I tossed my milk in the cooler which worked out well. You'll need to drink tons of water and expect a slight dip in production which may or may not be temp/perm. Although I did tend to stretch out my pumps longer compared to when nursing but you don't have to do that. I just fucking hate pumping so much.
+
+It was much easier with a pump with a battery pack. With a nursing cover I've pumped in bars and been recognized years later, rest areas on the side of the ride with many people around, and I've even asked strangers if I could pump in their home (in front of 13 mounted deer heads). It's not for the shy but if you are determined you can make it work. We stop for beer so frequently it worked out. I always pumped before bed and with any wee ones would pump in the middle of the night, sometimes on the bus but watch out for bus sleepers or people with middle of the night pee breaks.
+
+You are not required to share your milk with anyone else, but men are fascinatingly curious about EBM and super willing to try it which makes for some fun stories. It tastes good with Rumchata!
+
+*-JB*
+
+*Addendum by MJ* — Pumping breast milk in bars wins you things like "best left tit award" and makes you "RAGBRAI Famous".

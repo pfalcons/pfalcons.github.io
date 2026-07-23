@@ -2,13 +2,13 @@
 title: About
 ---
 
-Many years ago on Ragbrai, when just Tim O’Brien and I would embark on the journey, I sagged with a disheveled and dirty, but rowdy and fun bunch of guys and girls on a miniature bus slapdashedly painted yellow and red. They were known to the Iowa underground drinker/biker community as "Fat Tom's Army" (FTA).
+Many years ago on Ragbrai, when just Tim O'Brien and I would embark on the journey, I sagged with a disheveled and dirty, but rowdy and fun bunch of guys and girls on a miniature bus slapdashedly painted yellow and red. They were known to the Iowa underground drinker/biker community as "Fat Tom's Army" (FTA).
 
-![fat tom](/assets/images/misc/history2.jpg)
+![](/images/misc/history2.jpg)
 
 Based in Lehigh, IA, this team's namesake is an original member of the group, Fat Tom himself. The quotes, slogans "You'll see. You'll all see.", and logos stemmed from this character. Bus owner and team captain, Matt O'Hearn, bought a "new" Ragbrai bus for the team in 2003. Around a $400 investment, I'm told.  Apparently, John "Petey" Peterson proceeded to wire the busses electronics in such a convoluted fashion it would take an army of electrical engineers to figure the f*%&ing thing out.
 
-![fat tom's army bus](/assets/images/misc/history4.jpg)
+![](/images/misc/history4.jpg)
 
 Anyway, I joined the team that year along with JR Ruiz of Cedar Rapids, his girlfriend at the time, Tracey, and current Army members, Tim O'Brien, Riley Hess, Don Goen, Dana "Shit" Eggleston, Beth Ludwig and Pam Hove. We were transfers from the legendary Team Red Eye, who are now self-contained except for their relatively uncontained, kilt covered nether-regions. Incidentally, so are Matt O' and most of FTA.  Apparently all drinking team people eventually end up self-contained, so that's apparently what I have to look forward to.
 
@@ -20,21 +20,21 @@ Dave Ekstrom (Wizard) was a hell of a driver and a hell of a good time. One nigh
 
 Those were good memories, but as the top brass of most drinking teams usually do, FTA decided to sell the bus and go self-contained. That's when I had to step up and protect the sanctity of that 1986 Ford Shitheap. This was the birth of our spin-off team, then named the Fat TIRE Army.
 
-![fat tire army 2006](/assets/images/misc/history5.jpg)
+![](/images/misc/history5.jpg)
 
 Jace Cole of Chicago, as well as Robin and Kyle Williams of Iowa City, who joined us the year before signed on as co-owners. With a new paint job that did not compromise the many obscene quotes scribbled onto the bus in drunken haste, and a sponsorship from New Belgium Brewery providing 25 cases of Fat Tire Beer the bus took off with a new Matt O. at the helm. A new Matt O, Matt Olson. He had never driven a stick up until about 2 weeks before driving the bus, which has a rather difficult transmission, 1000 miles across Iowa and back with 15 screaming drunks in the back. He didn't offer to come back the next year. WTF. Drove all the way to NBB in Ft. Collins for the beer and swag that year.  It was before they distributed in Iowa.  It was all worth it when we laid eyes on that palate full of craft beer on the loading dock. Lessons learned from RAGBRAI XXXIV: The only reason you should ever drink 15 Fat Tires a day for 4 days in a row is if you need to shit through a coffee filter for some reason. Not good. The Army is not known to let a little angry ass syndrome keep it down. Good times were had by all.
 
 This brings us to Ragbrai XXXV, the inaugural trip of the bus under its new title, The Perineum Falcon. (A perineum is a taint there, Stephen Hawking.) The tales to be told of this riotous path of destruction across Iowa are many and are to be reserved for another section (RAGBRAI XXXV Debriefing). Suffice it to say that with our new valued team-members (Alan Lisse, a.k.a. "Uncle Al", a.k.a. "Shatner", Scott Pennington, Erik Didriksen, Sean Cisney, Brad Rist, Kevin McQueen, Jay Polson, John "Calves" Eash, Mike Toscano, a.k.a. "Wanker", Abby Sherman, Lee Kline, Phil James, Ardith Hobach, Marc Monroe and Arun Ramachandran) as well as our veteran members, Jace Cole, Mike James, Jennifer Bowen, Tim' Obrien, Riley Hess, Don Goen, Joe Whitsitt, Adam Hedberg-Buenz, Pam Hove and Beth Ludwig) and our friends at New Belgium Brewery, left a trail of days that is a gallery of personal triumph over the physical and mental demands of biking across Iowa and drinking heavily.
 
-![fat tire army 2007](/assets/images/misc/history6.jpg)
+![](/images/misc/history6.jpg)
 
-![fat tire army 2008](/assets/images/misc/history7.jpg)
+![](/images/misc/history7.jpg)
 
 We got a lot of years out of that ol'bus.  More than any sane person could expect, but finally, in 2011, during a crazy night that included Chris WZ winning a NBB Cruiser Bike and attempting a drive by tea-bagging, the tranny went out.  We thought we had it fixed and ready for XL in 2012, but she left us stranded before we got out of Iowa City for a shitty kick-off to a shitty and swelteringly hot year.  We persevered, had a good time and from the end of this era was born the newest era of the Perineum Falcons.
 
 As of 2013, we have a NEW BUS now, co-owned by Justin, a.k.a. "Juice", and Erica Schneider.  This one is actually younger than most of our team members, and just like the old bus, "she may not look like much, but she's got it where it counts, kid."  During RAGBRAI XLI, she proved true and we are looking forward to many more years on board.
 
-![perineum falcon II](/assets/images/misc/bus.jpg)
+![](/images/misc/bus.jpg)
 
 Regardless of how we get there or what we call ourselves, I have seen many great friends come aboard for the ride, which is the best part of all.
 
