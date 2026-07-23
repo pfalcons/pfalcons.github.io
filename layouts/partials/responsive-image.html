@@ -29,7 +29,7 @@
   {{- $fallbackWidth := index $widths (sub (len $widths) 1) -}}
   {{- $fallback := $src.Resize (printf "%dx" $fallbackWidth) -}}
 
-  <picture>
+  <picture class="{{ $class }}">
     <source srcset="{{ delimit $avifSrcset ", " }}" sizes="{{ $sizes }}" type="image/avif">
     <source srcset="{{ delimit $webpSrcset ", " }}" sizes="{{ $sizes }}" type="image/webp">
     <img src="{{ $fallback.RelPermalink }}" alt="{{ $alt }}" width="{{ $fallback.Width }}" height="{{ $fallback.Height }}" loading="{{ $loading }}" decoding="async" class="{{ $class }}">
