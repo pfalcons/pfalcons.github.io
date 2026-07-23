@@ -1,9 +1,14 @@
 {{ define "main" }}
   <div class="mx-auto max-w-5xl px-4 py-12 text-center">
-    <!-- Banner -->
-    <div class="mb-10">
-      <h1 class="font-heading text-5xl md:text-7xl uppercase tracking-widest text-falcons-accent mb-4">{{ .Site.Title }}</h1>
-      <p class="text-xl text-falcons-text-muted max-w-2xl mx-auto">{{ .Site.Params.description }}</p>
+    <!-- Logo splash -->
+    <div class="mb-8">
+      {{ $logo := resources.Get "images/pfalcons_logo.png" }}
+      {{ if $logo }}
+        {{ $logoResized := $logo.Resize "800x" }}
+        <img src="{{ $logoResized.RelPermalink }}" alt="Perineum Falcons" width="{{ $logoResized.Width }}" height="{{ $logoResized.Height }}" class="mx-auto max-w-full h-auto" loading="eager" decoding="async">
+      {{ else }}
+        <h1 class="font-heading text-5xl md:text-7xl uppercase tracking-widest text-falcons-accent mb-4">{{ .Site.Title }}</h1>
+      {{ end }}
     </div>
 
     {{ with .Content }}
