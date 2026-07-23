@@ -1,20 +1,33 @@
----
+# Perineum Falcons
 
----
-# pfalcons.github.io
+The official website of the Perineum Falcons — a RAGBRAI cycling team from Menlo, Iowa.
 
-The official website of the Perineum Falcons.
+## Tech stack
 
-## Setup
+- **[Hugo](https://gohugo.io/)** — static site generator (extended version)
+- **[Tailwind CSS v4](https://tailwindcss.com/)** — utility-first CSS framework
+- **[GitHub Actions](https://github.com/features/actions)** — CI/CD to GitHub Pages
 
-Github Codespaces
-`rvm install 2.7.8`
-`docker compose up`
+## Quick start
 
-## Author
- **Joe Whitsitt**
-- <https://github.com/joewhitsitt>
-- <https://twitter.com/joewhitsitt>
+```sh
+git clone https://github.com/pfalcons/pfalcons.github.io.git
+cd pfalcons.github.io
+npm ci
+hugo server
+```
+
+Open http://localhost:1313 in your browser.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for editor instructions on adding members, quotes, RAGBRAI years, and more.
+
+## Building for production
+
+```sh
+hugo --environment production --minify
+```
 
 ## License
 
