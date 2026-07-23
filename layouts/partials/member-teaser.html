@@ -10,7 +10,7 @@
       "widths"   (slice 200 400 800)
     ) }}
   </div>
-  <h3 class="font-heading text-lg text-falcons-text truncate">{{ .Title }}</h3>
+  <h3 class="font-heading text-lg text-falcons-text truncate">{{ .Title }}{{ with .Params.nickname }} <span class="text-falcons-text-muted font-normal text-base">{{ . }}</span>{{ end }}</h3>
   {{ with .Params.role }}
     <p class="text-xs text-falcons-text-muted mt-1 leading-tight">{{ . }}</p>
   {{ end }}
