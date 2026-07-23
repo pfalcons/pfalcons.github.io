@@ -2,6 +2,7 @@
   <div class="mx-auto max-w-5xl px-4 py-12 text-center">
     <!-- Logo splash -->
     <div class="mb-8">
+      <h1 class="sr-only">{{ .Site.Title }}</h1>
       {{ $logo := resources.Get "images/pfalcons_logo.png" }}
       {{ if $logo }}
         {{ $logoResized := $logo.Resize "800x" }}
