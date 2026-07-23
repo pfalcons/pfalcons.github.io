@@ -1,0 +1,28 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SportsTeam",
+  "name": "{{ .Site.Title }}",
+  "description": "{{ .Site.Params.description }}",
+  "url": "{{ .Site.BaseURL }}",
+  "sport": "Cycling",
+  "memberOf": {
+    "@type": "SportsOrganization",
+    "name": "RAGBRAI",
+    "description": "Register's Annual Great Bicycle Ride Across Iowa"
+  },
+  "location": {
+    "@type": "Place",
+    "name": "Menlo, Iowa",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Menlo",
+      "addressRegion": "IA",
+      "addressCountry": "US"
+    }
+  }
+  {{ with .Site.Params.og_image }},
+  "image": "{{ . | absURL }}"
+  {{ end }}
+}
+</script>
