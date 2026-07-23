@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-  --color-falcons-bg: #1a1d21;
-  --color-falcons-card: #272B30;
-  --color-falcons-nav: #151719;
-  --color-falcons-accent: #ef4444;
+  --color-falcons-bg: #272B30;
+  --color-falcons-card: #32373C;
+  --color-falcons-nav: #1c1e22;
+  --color-falcons-accent: #ee5f5b;
   --color-falcons-accent-light: #f87171;
   --color-falcons-green: #22c55e;
   --color-falcons-link: #60A5FA;
