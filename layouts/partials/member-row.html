@@ -1,0 +1,24 @@
+{{ $imgPath := "images/members/profile_image_placeholder.png" }}
+{{ with .Params.image }}{{ $imgPath = printf "images/members/%s" . }}{{ end }}
+<div class="flex gap-4 py-4 border-b border-falcons-border">
+  <div class="flex-shrink-0 w-16 h-16 overflow-hidden border border-falcons-border">
+    {{ partial "responsive-image" (dict
+      "imagePath" $imgPath
+      "alt"      .Title
+      "class"    "h-full w-full object-cover"
+      "sizes"    "64px"
+      "widths"   (slice 100 200 400)
+    ) }}
+  </div>
+  <div class="flex-1 min-w-0">
+    <h3 class="font-heading text-lg text-falcons-link hover:text-falcons-accent-light">
+      <a href="{{ .RelPermalink }}" class="no-underline">{{ .Title }}{{ with .Params.nickname }}<span class="text-falcons-text-muted font-normal"> {{ . }}</span>{{ end }}</a>
+    </h3>
+    {{ with .Params.role }}
+      <p class="text-sm text-falcons-text-muted mt-1">{{ . }}</p>
+    {{ end }}
+    {{ with .Summary }}
+      <p class="text-sm text-falcons-text mt-2 line-clamp-2">{{ . | plainify }}</p>
+    {{ end }}
+  </div>
+</div>
