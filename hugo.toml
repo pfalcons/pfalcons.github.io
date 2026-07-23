@@ -39,3 +39,11 @@ enableGitInfo = true
 [imaging]
   format = 'avif'
   quality = 75
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.goldmark.parser]
+  wrapStandAloneImageWithinParagraph = false
+
+ignoreLogs = ['warning-goldmark-raw-html']
