@@ -1,0 +1,41 @@
+baseURL = 'https://perineumfalcons.com'
+title = 'Perineum Falcons'
+theme = 'pfalcons'
+enableGitInfo = true
+
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    source = 'content'
+    target = 'content'
+  [[module.mounts]]
+    source = 'data'
+    target = 'data'
+  [[module.mounts]]
+    source = 'static'
+    target = 'static'
+  [[module.mounts]]
+    source = 'layouts'
+    target = 'layouts'
+  [[module.mounts]]
+    source = 'archetypes'
+    target = 'archetypes'
+
+[params]
+  description = 'Perineum Falcons — RAGBRAI cycling team from Iowa City'
+  author = 'Perineum Falcons'
+  og_image = '/images/og-default.jpg'
+
+[taxonomies]
+  tag = 'tags'
+  category = 'categories'
+
+[outputs]
+  section = ['HTML', 'RSS']
+  home = ['HTML', 'RSS']
+
+[imaging]
+  format = 'avif'
+  quality = 75

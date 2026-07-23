@@ -1,0 +1,11 @@
+name = "pfalcons"
+license = "MIT"
+licenselink = "https://github.com/pfalcons/pfalcons.github.io/blob/main/LICENSE.md"
+description = "Custom theme for the Perineum Falcons Hugo site"
+homepage = "https://perineumfalcons.com"
+tags = ["cycling", "ragbrai", "iowa-city"]
+features = ["blog", "members", "ragbrai"]
+min_version = "0.100.0"
+
+[author]
+  name = "Perineum Falcons"
