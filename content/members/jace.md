@@ -1,0 +1,10 @@
+---
+title: Jace
+draft: false
+params:
+  short_name: jace
+  role: Founder/Former Co-Captain/Gay Rights Advocate
+  first_ragbrai: 2006
+  image: jace.jpg
+  active: false
+---

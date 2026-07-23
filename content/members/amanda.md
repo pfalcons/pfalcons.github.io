@@ -1,0 +1,15 @@
+---
+title: Amanda
+draft: false
+params:
+  short_name: amanda
+  nickname: gots a Smoothie!
+  first_ragbrai: 2010
+  active: false
+  image: amanda.jpg
+---
+<audio controls>
+  <source src="/assets/audio/smoothie.ogg" type="audio/ogg">
+  <source src="/assets/audio/smoothie.wav" type="audio/mpeg">
+Your browser (most likely Internet Explorer) does not support the audio element.
+</audio>
